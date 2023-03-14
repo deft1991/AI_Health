@@ -8,8 +8,8 @@ using UnityEngine;
  * Required components
  */
 [RequireComponent(typeof(FillDataManager))]
-// [RequireComponent(typeof(InventoryManager))]
-// [RequireComponent(typeof(WeatherManager))]
+[RequireComponent(typeof(ChatGPTManager))]
+[RequireComponent(typeof(PlayerInfoManager))]
 // [RequireComponent(typeof(ImagesManager))]
 // [RequireComponent(typeof(AudioManager))]
 // [RequireComponent(typeof(MissionManager))]
@@ -19,7 +19,7 @@ public class Managers : MonoBehaviour
     
     public static FillDataManager FillDataManager { get; private set; }
     public static ChatGPTManager ChatGPTManager { get; private set; }
-    // public static WeatherManager Weather { get; private set; }
+    public static PlayerInfoManager PlayerInfoManager { get; private set; }
     // public static ImagesManager Images { get; private set; }
     // public static AudioManager Audio { get; private set; }
     // public static MissionManager Mission { get; private set; }
@@ -40,7 +40,7 @@ public class Managers : MonoBehaviour
         
         FillDataManager = GetComponent<FillDataManager>();
         ChatGPTManager = GetComponent<ChatGPTManager>();
-        // Weather = GetComponent<WeatherManager>();
+        PlayerInfoManager = GetComponent<PlayerInfoManager>();
         // Images = GetComponent<ImagesManager>();
         // Audio = GetComponent<AudioManager>();
         // Mission = GetComponent<MissionManager>();
@@ -49,7 +49,7 @@ public class Managers : MonoBehaviour
         _startSequence = new List<IGameManager>();
         _startSequence.Add(FillDataManager);
         _startSequence.Add(ChatGPTManager);
-        // _startSequence.Add(Weather);
+        _startSequence.Add(PlayerInfoManager);
         // _startSequence.Add(Images);
         // _startSequence.Add(Audio);
         // _startSequence.Add(Mission);
