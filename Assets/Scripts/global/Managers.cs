@@ -10,8 +10,8 @@ using UnityEngine;
 [RequireComponent(typeof(FillDataManager))]
 [RequireComponent(typeof(ChatGPTManager))]
 [RequireComponent(typeof(PlayerInfoManager))]
-// [RequireComponent(typeof(ImagesManager))]
-// [RequireComponent(typeof(AudioManager))]
+[RequireComponent(typeof(AdsInitializer))]
+[RequireComponent(typeof(BannerAdExample))]
 // [RequireComponent(typeof(MissionManager))]
 // [RequireComponent(typeof(DataManager))]
 public class Managers : MonoBehaviour
@@ -20,8 +20,8 @@ public class Managers : MonoBehaviour
     public static FillDataManager FillDataManager { get; private set; }
     public static ChatGPTManager ChatGPTManager { get; private set; }
     public static PlayerInfoManager PlayerInfoManager { get; private set; }
-    // public static ImagesManager Images { get; private set; }
-    // public static AudioManager Audio { get; private set; }
+    public static AdsInitializer AdsInitializer { get; private set; }
+    public static BannerAdExample BannerAdExample { get; private set; }
     // public static MissionManager Mission { get; private set; }
     // public static DataManager Data { get; private set; }
 
@@ -41,8 +41,8 @@ public class Managers : MonoBehaviour
         FillDataManager = GetComponent<FillDataManager>();
         ChatGPTManager = GetComponent<ChatGPTManager>();
         PlayerInfoManager = GetComponent<PlayerInfoManager>();
-        // Images = GetComponent<ImagesManager>();
-        // Audio = GetComponent<AudioManager>();
+        AdsInitializer = GetComponent<AdsInitializer>();
+        BannerAdExample = GetComponent<BannerAdExample>();
         // Mission = GetComponent<MissionManager>();
         // Data = GetComponent<DataManager>();
 
@@ -50,8 +50,8 @@ public class Managers : MonoBehaviour
         _startSequence.Add(FillDataManager);
         _startSequence.Add(ChatGPTManager);
         _startSequence.Add(PlayerInfoManager);
-        // _startSequence.Add(Images);
-        // _startSequence.Add(Audio);
+        _startSequence.Add(AdsInitializer);
+        _startSequence.Add(BannerAdExample);
         // _startSequence.Add(Mission);
         /*
          * MUST be last manager in loading
@@ -103,5 +103,7 @@ public class Managers : MonoBehaviour
         }
         Debug.Log("All managers started up");
         Messenger.Broadcast(StartupEvent.MANAGERS_STARTED);
+        
+        Managers.BannerAdExample.Start();
     }
 }

@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2023_1_0;UNITY_2023_1;UNITY_2023;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2023_1_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2023_1_0;UNITY_2023_1;UNITY_2023;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -45,12 +45,16 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/PlayerRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/Scripts/StartupEvent.cs" />
      <Compile Include="Assets/Scripts/data/PlayerIfoDto.cs" />
      <Compile Include="Assets/Scripts/global/manager/FillDataManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
+     <Compile Include="Assets/Scripts/Advert/InterstitialAdExample.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/PlayerInputController.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGender.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
@@ -60,20 +64,25 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets/Scripts/PlayerInputController.cs" />
      <Compile Include="Assets/Scripts/global/StartupController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
-     <Compile Include="Assets/Scripts/MenuController.cs" />
+     <Compile Include="Assets/Scripts/debugHelper/ZzzLog.cs" />
+     <Compile Include="Assets/Scripts/Advert/AdsInitializer.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/ManagerStatus.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+     <Compile Include="Assets/Scripts/data/ChatGPTSecurityDto.cs" />
+     <Compile Include="Assets/Scripts/Advert/BannerAdExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/MenuController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
+     <Compile Include="Assets/Scripts/Advert/RewardedAdsButton.cs" />
+     <Compile Include="Assets/Scripts/global/manager/ChatGPTSecurityManager.cs" />
      <Compile Include="Assets/Scripts/UiScreen.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
@@ -86,21 +95,26 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
+     <Compile Include="Assets/Scripts/RecommendationEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
      <Compile Include="Assets/Scripts/IGameManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
      <Compile Include="Assets/Scripts/Messenger.cs" />
+     <Compile Include="Assets/Samples/OpenAI Unity/0.1.8/ChatGPT/ChatGPT.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets/Scripts/global/manager/PlayerInfoManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library/BuildInstructions" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
+     <Folder Include="Assets/Scripts/playerChangeValue" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
+     <Folder Include="Assets/Samples/OpenAI Unity" />
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
@@ -111,9 +125,13 @@
      <Folder Include="Assets/Prefab" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <Folder Include="Assets/TextMesh Pro/Resources" />
+     <Folder Include="Assets/Scripts/debugHelper" />
+     <Folder Include="Assets/Samples/OpenAI Unity/0.1.8" />
      <Folder Include="Assets/Scripts/global" />
+     <Folder Include="Assets/Samples" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets/TextMesh Pro" />
+     <None Include="Assets/Resources/auth.json" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources" />
      <Folder Include="Assets/Scripts/global/manager" />
@@ -122,12 +140,14 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Materials" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <Folder Include="Assets/Resources" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <Folder Include="Assets/TextMesh Pro/Shaders" />
+     <Folder Include="Assets/Graphics" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
@@ -136,6 +156,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+     <Folder Include="Assets/Samples/OpenAI Unity/0.1.8/ChatGPT" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Textures" />
@@ -145,6 +166,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
+     <Folder Include="Assets/Scripts/Advert" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
      <Folder Include="Assets/Scripts/data" />
@@ -175,12 +197,6 @@
      </Reference>
      <Reference Include="UnityEngine.ClothModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterInputModule">
-     <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterRendererModule">
-     <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.CommandStateObserverModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CommandStateObserverModule.dll</HintPath>
@@ -349,9 +365,6 @@
      </Reference>
      <Reference Include="UnityEngine.VideoModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VirtualTexturingModule">
-     <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.WindModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
@@ -812,44 +825,23 @@
      <Reference Include="mscorlib">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+     <Reference Include="OpenAI.Runtime">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/OpenAI.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+     <Reference Include="UnityEngine.Advertisements.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="PsdPlugin">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Path.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Path.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <Reference Include="Unity.2D.Common.Path.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Path.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
@@ -860,20 +852,80 @@
      <Reference Include="Unity.2D.SpriteShape.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Tilemap.Extras">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
+     <Reference Include="UnityEngine.Advertisements">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.PixelPerfect.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEngineBridge.001">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Runtime">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core.Analytics">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Extras">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -881,47 +933,26 @@
      <Reference Include="Unity.Mathematics">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Services.Core.Environments">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.2D.Psdimporter.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Collections">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.PixelPerfect">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
@@ -932,17 +963,8 @@
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.PixelPerfect.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

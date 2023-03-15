@@ -34,7 +34,9 @@ namespace global
 
         public void SavePlayer()
         {
-            PlayerPrefs.SetString(PLAYER_KEY, JsonUtility.ToJson(Player));
+            string value = JsonUtility.ToJson(Player);
+            Debug.Log("Save player: " + value);
+            PlayerPrefs.SetString(PLAYER_KEY, value);
         }
 
         private static bool IsSaveExists()

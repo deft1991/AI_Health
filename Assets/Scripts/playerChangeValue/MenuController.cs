@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup weightScreen;
     [SerializeField] private CanvasGroup heightScreen;
     [SerializeField] private CanvasGroup goalScreen;
+    [SerializeField] private CanvasGroup recommendationScreen;
 
     private void Start()
     {
@@ -44,6 +45,14 @@ public class MenuController : MonoBehaviour
     public void GenerateResult()
     {
         // todo open unity ads
+        Managers.PlayerInfoManager.SavePlayer();
+        SetCurrentScreen(UiScreen.Recommendation);
+        Managers.ChatGPTManager.GetRecommendation();
+    }
+
+    public void TryAgain()
+    {
+        // todo open unity ads
         Managers.ChatGPTManager.GetRecommendation();
     }
 
@@ -61,5 +70,6 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(weightScreen, screen == UiScreen.Weight);
         Utility.SetCanvasGroupEnabled(heightScreen, screen == UiScreen.Height);
         Utility.SetCanvasGroupEnabled(goalScreen, screen == UiScreen.Goal);
+        Utility.SetCanvasGroupEnabled(recommendationScreen, screen == UiScreen.Recommendation);
     }
 }
