@@ -21,13 +21,23 @@ namespace playerChangeValue.util
                 debugAreaText = GetComponent<Text>();
             }
 
-            debugAreaText.text = string.Empty;
+            if (debugAreaText != null)
+            {
+                debugAreaText.text = string.Empty;
+            }
         }
 
         void OnEnable()
         {
-            debugAreaText.enabled = enableDebug;
-            enabled = enableDebug;
+            if (debugAreaText != null)
+            {
+                debugAreaText.enabled = enableDebug;
+                enabled = enableDebug;
+            }
+            else
+            {
+                enabled = false;
+            }
 
             if (enabled)
             {
