@@ -13,6 +13,12 @@ GameObject:
   - component: {fileID: 9105150464458993140}
   - component: {fileID: 1686576958722392525}
   - component: {fileID: 8884082156872906515}
+  - component: {fileID: 2645816127685880430}
+  - component: {fileID: 1388446114487814704}
+  - component: {fileID: 1898350693472443288}
+  - component: {fileID: 1818482063569703523}
+  - component: {fileID: 6174744343535812590}
+  - component: {fileID: 3229427445294227725}
   m_Layer: 0
   m_Name: Game Managers
   m_TagString: Untagged
@@ -33,7 +39,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7684202788410380289
 MonoBehaviour:
@@ -83,3 +89,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba1c5e40a1de47d4aff5b6333ac8037f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2645816127685880430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc21e1bf87114fc48f4702e309aef8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 
+  _iOsGameId: 
+  _testMode: 1
+  _enablePerPlacementMode: 1
+--- !u!114 &1388446114487814704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc094056f06e4d2c9f7d8e18453f1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bannerPosition: 4
+  _androidAdUnitId: Banner_Android
+  _iOsAdUnitId: Banner_iOS
+--- !u!114 &1898350693472443288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6122f2aa61e4942910ae86c0b74c3a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS
+--- !u!114 &1818482063569703523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71db07b4252646a295d42392dac5d26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatGptSettings: {fileID: 11400000, guid: bb9679202d15748b6a7232b4f5d03ccb, type: 2}
+--- !u!114 &6174744343535812590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7c12878dab47659ddf8c9553dfe26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 0}
+  _androidAdUnitId: Rewarded_Android
+  _iOsAdUnitId: Rewarded_iOS
+--- !u!114 &3229427445294227725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912048341021319896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d814ed5ae99461a9c2eb84e339fe64f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitSec: 5

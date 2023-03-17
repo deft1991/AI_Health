@@ -2,15 +2,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
-public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
+public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener, IGameManager
 {
     [SerializeField] Button _showAdButton;
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] string _iOsAdUnitId = "Rewarded_iOS";
-    string _adUnitId;
+    private static string _adUnitId;
 
-    void Awake()
+    public ManagerStatus Status { get; private set; }
+
+    // void Awake()
+    // {
+    //     // Get the Ad Unit ID for the current platform:
+    //     _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
+    //         ? _iOsAdUnitId
+    //         : _androidAdUnitId;
+    //
+    //     //Disable button until ad is ready to show
+    //     _showAdButton.interactable = false;
+    //     LoadAd();
+    // }
+
+    public void Startup()
     {
+        Debug.Log("Mission manager starting...");
+
+        Status = ManagerStatus.Initializing;
+
         // Get the Ad Unit ID for the current platform:
         _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
             ? _iOsAdUnitId
@@ -19,6 +37,9 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         //Disable button until ad is ready to show
         _showAdButton.interactable = false;
         LoadAd();
+
+        Status = ManagerStatus.Started;
+        Debug.Log("InterstitialAdExample: started");
     }
 
     // Load content to the Ad Unit:
@@ -62,7 +83,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);
-            
+
             // todo send message show result
         }
     }

@@ -11,12 +11,18 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup heightScreen;
     [SerializeField] private CanvasGroup goalScreen;
     [SerializeField] private CanvasGroup recommendationScreen;
+    [SerializeField] private CanvasGroup sorryScreen;
 
     private void Start()
     {
+        SetCurrentScreen(UiScreen.Sorry);
+    }       
+    
+    public void OpenName()
+    {
         SetCurrentScreen(UiScreen.Name);
-    }
-
+    }   
+    
     public void OpenAge()
     {
         SetCurrentScreen(UiScreen.Age);
@@ -29,7 +35,9 @@ public class MenuController : MonoBehaviour
 
     public void OpenWeight()
     {
+        Managers.InterstitialAdExample.ShowAd();
         SetCurrentScreen(UiScreen.Weight);
+        Managers.InterstitialAdExample.LoadAd();
     }
 
     public void OpenHeight()
@@ -45,15 +53,21 @@ public class MenuController : MonoBehaviour
     public void GenerateResult()
     {
         // todo open unity ads
+        Managers.InterstitialAdExample.ShowAd();
+        
         Managers.PlayerInfoManager.SavePlayer();
         SetCurrentScreen(UiScreen.Recommendation);
         Managers.ChatGPTManager.GetRecommendation();
+        
+        Managers.InterstitialAdExample.LoadAd();
     }
 
     public void TryAgain()
     {
         // todo open unity ads
+        Managers.InterstitialAdExample.ShowAd();
         Managers.ChatGPTManager.GetRecommendation();
+        Managers.InterstitialAdExample.LoadAd();
     }
 
     // public void SelectLevel(int level)
@@ -71,5 +85,6 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(heightScreen, screen == UiScreen.Height);
         Utility.SetCanvasGroupEnabled(goalScreen, screen == UiScreen.Goal);
         Utility.SetCanvasGroupEnabled(recommendationScreen, screen == UiScreen.Recommendation);
+        Utility.SetCanvasGroupEnabled(sorryScreen, screen == UiScreen.Sorry);
     }
 }

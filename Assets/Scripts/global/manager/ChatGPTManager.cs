@@ -1,9 +1,13 @@
 using System;
 using System.Collections.Generic;
+using chatGPT.data;
 using data;
 using OpenAI;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using ChatMessage = chatGPT.data.ChatMessage;
+using Logger = playerChangeValue.util.Logger;
 
 namespace global
 {
@@ -27,8 +31,8 @@ namespace global
 
         public async void GetRecommendation()
         {
-            // Managers.BannerAdExample.Start();
-            
+            Managers.InterstitialAdExample.LoadAd();
+
             Debug.Log("Get Chat GPT recommendation");
             Messenger.Broadcast(RecommendationEvent.IN_PROCESS);
 
@@ -51,7 +55,7 @@ namespace global
                     goal = "increase muscles";
                     break;
             }
-            
+
             string requestMessage = String.Format(requestMessageTemplate,
                 goal,
                 playerIfoDto.age.ToString(),
@@ -66,17 +70,19 @@ namespace global
             List<ChatMessage> messages = new List<ChatMessage>();
             messages.Add(newMessage);
 
-            // Complete the instruction
-            var completionResponse = await openai.CreateChatCompletion(new CreateChatCompletionRequest()
-            {
-                Model = "gpt-3.5-turbo-0301",
-                Messages = messages
-            });
+            StartCoroutine(ChatGPTClient.Instance.Ask(requestMessage, (r) => ProcessResponse(r)));
+        }
 
-            ChatMessage message;
-            if (completionResponse.Choices != null && completionResponse.Choices.Count > 0)
+        public void ProcessResponse(MyCreateChatCompletionResponse response)
+        {
+            Debug.Log("completionResponse: " + response);
+            Debug.Log("completionResponse.Choices: " + response.Choices);
+            Debug.Log("completionResponse.Choices.Count: " + response.Choices.Count);
+
+            ChatMessage message = new ChatMessage();
+            if (response.Choices != null && response.Choices.Count > 0)
             {
-                message = completionResponse.Choices[0].Message;
+                message = response.Choices[0].Message;
                 PlayerPrefs.SetString("recommendation", message.Content);
             }
             else

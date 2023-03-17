@@ -7,5 +7,6 @@ public enum UiScreen : byte
     Height = 5,
     Goal = 6,
     Recommendation = 7,
+    Sorry = 8,
     
 }

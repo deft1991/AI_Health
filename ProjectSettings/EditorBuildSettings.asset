@@ -12,7 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/MainAppScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/Base.unity
-    guid: 08f68d5cbef744228acc321e265e79fb
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Samples/OpenAI Unity/0.1.9/ChatGPT/ChatGPT Sample.unity
+    guid: 523e2a98b1c50374b9e2093bdc0ce4ee
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

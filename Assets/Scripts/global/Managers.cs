@@ -12,8 +12,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInfoManager))]
 [RequireComponent(typeof(AdsInitializer))]
 [RequireComponent(typeof(BannerAdExample))]
-// [RequireComponent(typeof(MissionManager))]
-// [RequireComponent(typeof(DataManager))]
+[RequireComponent(typeof(InterstitialAdExample))]
+[RequireComponent(typeof(RewardedAdsButton))]
 public class Managers : MonoBehaviour
 {
     
@@ -22,8 +22,8 @@ public class Managers : MonoBehaviour
     public static PlayerInfoManager PlayerInfoManager { get; private set; }
     public static AdsInitializer AdsInitializer { get; private set; }
     public static BannerAdExample BannerAdExample { get; private set; }
-    // public static MissionManager Mission { get; private set; }
-    // public static DataManager Data { get; private set; }
+    public static InterstitialAdExample InterstitialAdExample { get; private set; }
+    public static RewardedAdsButton RewardedAdsButton { get; private set; }
 
     /*
      * List of all IGameManagers
@@ -43,16 +43,17 @@ public class Managers : MonoBehaviour
         PlayerInfoManager = GetComponent<PlayerInfoManager>();
         AdsInitializer = GetComponent<AdsInitializer>();
         BannerAdExample = GetComponent<BannerAdExample>();
-        // Mission = GetComponent<MissionManager>();
-        // Data = GetComponent<DataManager>();
+        InterstitialAdExample = GetComponent<InterstitialAdExample>();
+        RewardedAdsButton = GetComponent<RewardedAdsButton>();
 
         _startSequence = new List<IGameManager>();
+        _startSequence.Add(AdsInitializer);
         _startSequence.Add(FillDataManager);
         _startSequence.Add(ChatGPTManager);
         _startSequence.Add(PlayerInfoManager);
-        _startSequence.Add(AdsInitializer);
-        _startSequence.Add(BannerAdExample);
-        // _startSequence.Add(Mission);
+        // _startSequence.Add(BannerAdExample);
+        // _startSequence.Add(InterstitialAdExample);
+        // _startSequence.Add(RewardedAdsButton);
         /*
          * MUST be last manager in loading
          */
@@ -104,6 +105,8 @@ public class Managers : MonoBehaviour
         Debug.Log("All managers started up");
         Messenger.Broadcast(StartupEvent.MANAGERS_STARTED);
         
-        Managers.BannerAdExample.Start();
+        BannerAdExample.Startup();
+        InterstitialAdExample.Startup();
+        RewardedAdsButton.Startup();
     }
 }

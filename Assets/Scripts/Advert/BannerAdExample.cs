@@ -16,7 +16,7 @@ public class BannerAdExample : MonoBehaviour, IGameManager
     [SerializeField] string _iOsAdUnitId = "Banner_iOS";
     public ManagerStatus Status { get; private set; }
     
-    string _adUnitId;
+    private static string _adUnitId;
 
     public void Start()
     {
@@ -50,6 +50,7 @@ public class BannerAdExample : MonoBehaviour, IGameManager
         // Set the banner position:
         Advertisement.Banner.SetPosition(_bannerPosition);
         LoadBanner();
+        ShowBannerAd();
 
         Status = ManagerStatus.Started;
         Debug.Log("BannerAdExample: started");

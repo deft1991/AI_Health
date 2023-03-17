@@ -19,6 +19,7 @@ namespace playerChangeValue
             Debug.Log("Goal Dry");
             Managers.PlayerInfoManager.Player.goal = NutritionProgramGoal.DRY;
             generateResultButton.gameObject.SetActive(true);
+            Managers.InterstitialAdExample.ShowAd();
         }
 
         /**

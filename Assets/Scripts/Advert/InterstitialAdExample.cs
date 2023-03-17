@@ -3,19 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
+public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener, IGameManager
 {
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
-    private string _adUnitId;
+    private static string _adUnitId;
+
+    public ManagerStatus Status { get; private set; }
 
     void Awake()
     {
-        // Get the Ad Unit ID for the current platform:
+        // // Get the Ad Unit ID for the current platform:
+        // _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
+        //     ? _iOsAdUnitId
+        //     : _androidAdUnitId;
+        // LoadAd();
+    }
+
+    public void Startup()
+    {
+        Debug.Log("Mission manager starting...");
+
+
+        Status = ManagerStatus.Initializing;
+
         _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
             ? _iOsAdUnitId
             : _androidAdUnitId;
         LoadAd();
+
+        Status = ManagerStatus.Started;
+        Debug.Log("InterstitialAdExample: started");
     }
 
     // Load content to the Ad Unit:
@@ -38,6 +56,7 @@ public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnit
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
         // Optionally execute code if the Ad Unit successfully loads content.
+        Advertisement.Show(_adUnitId, this);
     }
 
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)

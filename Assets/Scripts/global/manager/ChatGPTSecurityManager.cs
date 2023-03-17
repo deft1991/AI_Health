@@ -18,8 +18,7 @@ namespace global
             // todo download state from prefs
 
             //Load text from a JSON file (Assets/auth.json)
-            var jsonTextFile = Resources.Load<TextAsset>(AUTH_FILE); 
-            
+            var jsonTextFile = Resources.Load<TextAsset>(AUTH_FILE);
             //Then use JsonUtility.FromJson<T>() to deserialize jsonTextFile into an object
             ChatGPTSecurity = JsonUtility.FromJson<ChatGPTSecurityDto>(jsonTextFile.text);
             
