@@ -210,3 +210,7 @@ $RECYCLE.BIN/
 *.msp
 
 .utmp/
+AI Health App_BackUpThisFolder_ButDontShipItWithYourGame/
+AI Health App_BurstDebugInformation_DoNotShip/
+AI Health_BackUpThisFolder_ButDontShipItWithYourGame/
+AI Health_BurstDebugInformation_DoNotShip/
