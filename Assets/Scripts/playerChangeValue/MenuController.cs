@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using data;
@@ -15,6 +16,19 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup sorryScreen;
     [SerializeField] private CanvasGroup aboutScreen;
     [SerializeField] private CanvasGroup profileScreen;
+    [SerializeField] private CanvasGroup muscleGroupScreen;
+    [SerializeField] private CanvasGroup workoutDurationScreen;
+
+
+    private void Awake()
+    {
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_WORK_DURATION, OpenWorkDuration);
+    }
+
+    private void OnDestroy()
+    {
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_WORK_DURATION, OpenWorkDuration);
+    }
 
     private void Start()
     {
@@ -101,6 +115,16 @@ public class MenuController : MonoBehaviour
         SetCurrentScreen(UiScreen.Profile);
     }
 
+    public void OpenTrainingProgram()
+    {
+        SetCurrentScreen(UiScreen.MuscleGroupProgram);
+    }
+
+    public void OpenWorkDuration()
+    {
+        SetCurrentScreen(UiScreen.WorkoutDuration);
+    }
+
     public void GenerateResult()
     {
         string recommendation = PlayerPrefs.GetString("recommendation");
@@ -147,5 +171,7 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(sorryScreen, screen == UiScreen.Sorry);
         Utility.SetCanvasGroupEnabled(aboutScreen, screen == UiScreen.About);
         Utility.SetCanvasGroupEnabled(profileScreen, screen == UiScreen.Profile);
+        Utility.SetCanvasGroupEnabled(muscleGroupScreen, screen == UiScreen.MuscleGroupProgram);
+        Utility.SetCanvasGroupEnabled(workoutDurationScreen, screen == UiScreen.WorkoutDuration);
     }
 }

@@ -10,5 +10,7 @@ public enum UiScreen : byte
     Sorry = 8,
     About = 9,
     Profile = 10,
+    MuscleGroupProgram = 11,
+    WorkoutDuration = 12,
     
 }

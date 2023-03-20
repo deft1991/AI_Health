@@ -40,8 +40,6 @@ namespace playerChangeValue
             Messenger<string>.RemoveListener(ProfileChangeEvent.CHANGE_HEIGHT, OnChangeHeight);
             
             Messenger<GenderType>.RemoveListener(ProfileChangeEvent.CHANGE_GENDER, OnChangeGender);
-            Messenger<NutritionProgramGoal>.RemoveListener(ProfileChangeEvent.CHANGE_GENDER, OnChangeGoal);
-            Messenger<GenderType>.RemoveListener(ProfileChangeEvent.CHANGE_GENDER, OnChangeGender);
             Messenger<NutritionProgramGoal>.RemoveListener(ProfileChangeEvent.CHANGE_GOAL, OnChangeGoal);
         }
 

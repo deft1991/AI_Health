@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using data;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace global
         public ManagerStatus Status { get; private set; }
         public PlayerIfoDto Player { get; private set; }
 
+        public HashSet<MuscleGroupType> Programs { get; set; }
 
         public void Startup()
         {

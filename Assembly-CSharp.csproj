@@ -45,6 +45,7 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/systemEvents/ScreenChangeEvent.cs" />
      <Compile Include="Assets/Scripts/systemEvents/StartupEvent.cs" />
      <Compile Include="Assets/Scripts/PlayerRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
@@ -57,13 +58,13 @@
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerInputController.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGender.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTTester.cs" />
+     <Compile Include="Assets/Scripts/data/enums/MuscleGroupType.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/ProfileInputController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
-     <Compile Include="Assets/Scripts/data/GenderType.cs" />
      <Compile Include="Assets/Scripts/service/profile/ProfileViewService.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
@@ -95,7 +96,9 @@
      <Compile Include="Assets/Scripts/UiScreen.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets/Scripts/data/enums/GenderType.cs" />
      <Compile Include="Assets/Scripts/util/ZzzLog.cs" />
+     <Compile Include="Assets/Scripts/data/MuscleGroupToggle.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
      <Compile Include="Assets/Scripts/global/manager/ChatGPTManager.cs" />
      <Compile Include="Assets/Scripts/global/Managers.cs" />
@@ -115,10 +118,12 @@
      <Compile Include="Assets/Scripts/systemEvents/RecommendationEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
+     <Compile Include="Assets/Scripts/Advert/BannerAdStarter.cs" />
      <Compile Include="Assets/Scripts/Messenger.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/DataTypes.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets/Scripts/global/manager/PlayerInfoManager.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/MuscleGroupInputHandler.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library/BuildInstructions" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -218,6 +223,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded" />
+     <Folder Include="Assets/Scripts/data/enums" />
      <None Include="Assets/SimplePixelUI/fonts/Font1/readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Scripts/chatGPT" />

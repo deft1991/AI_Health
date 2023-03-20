@@ -910,12 +910,20 @@ PrefabInstance:
       value: Game Managers
       objectReference: {fileID: 0}
     - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+      propertyPath: _testMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
       propertyPath: _iOsGameId
       value: 5205888
       objectReference: {fileID: 0}
     - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
       propertyPath: _androidGameId
       value: 5205889
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+      propertyPath: _enablePerPlacementMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -111,7 +111,10 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
     void OnDestroy()
     {
-        // Clean up the button listeners:
-        _showAdButton.onClick.RemoveAllListeners();
+        if (_showAdButton != null)
+        {
+            _showAdButton.onClick.RemoveAllListeners();
+            // Clean up the button listeners:
+        }
     }
 }
