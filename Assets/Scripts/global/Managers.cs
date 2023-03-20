@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using global;
+using playerChangeValue;
 using UnityEngine;
 
 
@@ -107,6 +108,6 @@ public class Managers : MonoBehaviour
         
         BannerAdExample.Startup();
         InterstitialAdExample.Startup();
-        RewardedAdsButton.Startup();
+        // RewardedAdsButton.Startup();
     }
 }

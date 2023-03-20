@@ -83,6 +83,7 @@ namespace global
             if (response.Choices != null && response.Choices.Count > 0)
             {
                 message = response.Choices[0].Message;
+                message.Content.Replace(" ", "  ");
                 PlayerPrefs.SetString("recommendation", message.Content);
             }
             else

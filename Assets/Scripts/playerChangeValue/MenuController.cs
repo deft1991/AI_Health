@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using data;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
@@ -12,17 +13,59 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup goalScreen;
     [SerializeField] private CanvasGroup recommendationScreen;
     [SerializeField] private CanvasGroup sorryScreen;
+    [SerializeField] private CanvasGroup aboutScreen;
+    [SerializeField] private CanvasGroup profileScreen;
 
     private void Start()
     {
         SetCurrentScreen(UiScreen.Sorry);
-    }       
-    
+    }
+
+    public void OpenSorry()
+    {
+        SetCurrentScreen(UiScreen.Sorry);
+    }
+
+    public void OpenNutritionProgram()
+    {
+        PlayerIfoDto player = Managers.PlayerInfoManager.Player;
+
+        if (player.name == null)
+        {
+            OpenName();
+        }
+        else if (player.age <= 0)
+        {
+            OpenAge();
+        }
+        else if (player.gender == GenderType.DEFAULT)
+        {
+            OpenGender();
+        }
+        else if (player.weight <= 0)
+        {
+            OpenWeight();
+        }
+        else if (player.height <= 0)
+        {
+            OpenHeight();
+        }
+        else if (player.goal == NutritionProgramGoal.DEFAULT)
+        {
+            OpenGoal();
+        }
+        else
+        {
+            GenerateResult();
+        }
+    }
+
+
     public void OpenName()
     {
         SetCurrentScreen(UiScreen.Name);
-    }   
-    
+    }
+
     public void OpenAge()
     {
         SetCurrentScreen(UiScreen.Age);
@@ -35,9 +78,7 @@ public class MenuController : MonoBehaviour
 
     public void OpenWeight()
     {
-        Managers.InterstitialAdExample.ShowAd();
         SetCurrentScreen(UiScreen.Weight);
-        Managers.InterstitialAdExample.LoadAd();
     }
 
     public void OpenHeight()
@@ -50,16 +91,34 @@ public class MenuController : MonoBehaviour
         SetCurrentScreen(UiScreen.Goal);
     }
 
+    public void OpenAbout()
+    {
+        SetCurrentScreen(UiScreen.About);
+    }
+
+    public void OpenProfile()
+    {
+        SetCurrentScreen(UiScreen.Profile);
+    }
+
     public void GenerateResult()
     {
-        // todo open unity ads
-        Managers.InterstitialAdExample.ShowAd();
-        
-        Managers.PlayerInfoManager.SavePlayer();
-        SetCurrentScreen(UiScreen.Recommendation);
-        Managers.ChatGPTManager.GetRecommendation();
-        
-        Managers.InterstitialAdExample.LoadAd();
+        string recommendation = PlayerPrefs.GetString("recommendation");
+        if (recommendation != null)
+        {
+            SetCurrentScreen(UiScreen.Recommendation);
+            Messenger<string>.Broadcast(RecommendationEvent.RECEIVED, recommendation);
+        }
+        else
+        {
+            Managers.InterstitialAdExample.ShowAd();
+
+            Managers.PlayerInfoManager.SavePlayer();
+            SetCurrentScreen(UiScreen.Recommendation);
+            Managers.ChatGPTManager.GetRecommendation();
+
+            Managers.InterstitialAdExample.LoadAd();
+        }
     }
 
     public void TryAgain()
@@ -86,5 +145,7 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(goalScreen, screen == UiScreen.Goal);
         Utility.SetCanvasGroupEnabled(recommendationScreen, screen == UiScreen.Recommendation);
         Utility.SetCanvasGroupEnabled(sorryScreen, screen == UiScreen.Sorry);
+        Utility.SetCanvasGroupEnabled(aboutScreen, screen == UiScreen.About);
+        Utility.SetCanvasGroupEnabled(profileScreen, screen == UiScreen.Profile);
     }
 }

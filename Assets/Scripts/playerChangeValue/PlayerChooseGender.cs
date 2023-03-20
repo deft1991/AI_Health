@@ -20,6 +20,8 @@ namespace playerChangeValue
             Managers.PlayerInfoManager.Player.gender = GenderType.MALE;
 
             weightNextButton.gameObject.SetActive(true);
+            
+            Messenger<GenderType>.Broadcast(ProfileChangeEvent.CHANGE_GENDER, GenderType.MALE);
         }
 
         /**
@@ -30,6 +32,8 @@ namespace playerChangeValue
             Debug.Log("Gender Female");
             Managers.PlayerInfoManager.Player.gender = GenderType.FEMALE;
             weightNextButton.gameObject.SetActive(true);
+            
+            Messenger<GenderType>.Broadcast(ProfileChangeEvent.CHANGE_GENDER, GenderType.FEMALE);
         }
     }
 }

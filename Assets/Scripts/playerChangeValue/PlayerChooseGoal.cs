@@ -19,6 +19,8 @@ namespace playerChangeValue
             Debug.Log("Goal Dry");
             Managers.PlayerInfoManager.Player.goal = NutritionProgramGoal.DRY;
             generateResultButton.gameObject.SetActive(true);
+            
+            Messenger<NutritionProgramGoal>.Broadcast(ProfileChangeEvent.CHANGE_GOAL, NutritionProgramGoal.DRY);
         }
 
         /**
@@ -29,6 +31,8 @@ namespace playerChangeValue
             Debug.Log("Goal Same");
             Managers.PlayerInfoManager.Player.goal = NutritionProgramGoal.SAME;
             generateResultButton.gameObject.SetActive(true);
+            
+            Messenger<NutritionProgramGoal>.Broadcast(ProfileChangeEvent.CHANGE_GOAL, NutritionProgramGoal.SAME);
         }
 
         /**
@@ -39,6 +43,8 @@ namespace playerChangeValue
             Debug.Log("Goal Increase");
             Managers.PlayerInfoManager.Player.goal = NutritionProgramGoal.INCREASE;
             generateResultButton.gameObject.SetActive(true);
+            
+            Messenger<NutritionProgramGoal>.Broadcast(ProfileChangeEvent.CHANGE_GOAL, NutritionProgramGoal.INCREASE);
         }
     }
 }

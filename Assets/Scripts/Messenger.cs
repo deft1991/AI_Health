@@ -192,7 +192,7 @@ public static class Messenger<T> {
 			callback.Invoke(arg1);
 	}
 
-	private static void Broadcast<TReturn>(string eventType, T arg1, Action<TReturn> returnCall, MessengerMode mode) {
+	public static void Broadcast<TReturn>(string eventType, T arg1, Action<TReturn> returnCall, MessengerMode mode) {
 		MessengerInternal.OnBroadcasting(eventType, mode);
 		var invocationList = MessengerInternal.GetInvocationList<Func<T, TReturn>>(eventType);
  

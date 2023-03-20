@@ -7,7 +7,7 @@ namespace global
 {
     public class StuckManager : MonoBehaviour, IGameManager
     {
-        public float waitSec;
+        public float waitSec = 3F;
         public ManagerStatus Status { get; private set; }
 
         public void Startup()

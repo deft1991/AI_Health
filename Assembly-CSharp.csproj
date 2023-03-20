@@ -45,10 +45,10 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2023.1.0b3/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/systemEvents/StartupEvent.cs" />
      <Compile Include="Assets/Scripts/PlayerRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
-     <Compile Include="Assets/Scripts/StartupEvent.cs" />
      <Compile Include="Assets/Scripts/data/PlayerIfoDto.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTClient.cs" />
      <Compile Include="Assets/Scripts/global/manager/FillDataManager.cs" />
@@ -58,11 +58,13 @@
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGender.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTTester.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/ProfileInputController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/Scripts/data/GenderType.cs" />
+     <Compile Include="Assets/Scripts/service/profile/ProfileViewService.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
@@ -80,6 +82,7 @@
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTSettings.cs" />
      <Compile Include="Assets/Scripts/data/ChatGPTSecurityDto.cs" />
      <Compile Include="Assets/Scripts/util/Logger.cs" />
+     <Compile Include="Assets/Scripts/systemEvents/ProfileChangeEvent.cs" />
      <Compile Include="Assets/Scripts/Advert/BannerAdExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -104,12 +107,12 @@
      <Compile Include="Assets/Scripts/global/manager/StuckManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/ChatGPTResponse.cs" />
-     <Compile Include="Assets/Scripts/RecommendationEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
      <Compile Include="Assets/Scripts/IGameManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+     <Compile Include="Assets/Scripts/systemEvents/RecommendationEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
      <Compile Include="Assets/Scripts/Messenger.cs" />
@@ -131,6 +134,7 @@
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2" />
      <Folder Include="Assets/SimplePixelUI/update 1.15" />
+     <Folder Include="Assets/Scripts/service/profile" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/rounded" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/rounded" />
@@ -142,6 +146,7 @@
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/license.txt" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
+     <Folder Include="Assets/Scripts/service" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal" />
      <Folder Include="Assets/Scenes" />
      <Folder Include="Assets/SimplePixelUI/artwork/icons" />
@@ -217,6 +222,7 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Scripts/chatGPT" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/square" />
+     <Folder Include="Assets/Scripts/systemEvents" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
@@ -523,6 +529,12 @@
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.burst@1.8.2/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+     <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.iOS.Extensions.Common">
+     <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b3/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
