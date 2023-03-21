@@ -59,11 +59,15 @@ namespace playerChangeValue
         private void OnChangeGender(GenderType genderVal)
         {
             SetGender(genderVal);
+            Managers.PlayerInfoManager.Player.gender = genderVal;
+            Managers.PlayerInfoManager.SavePlayer();
         }
         
         private void OnChangeGoal(NutritionProgramGoal goalVal)
         {
             SetGoal(goalVal);
+            Managers.PlayerInfoManager.Player.goal = goalVal;
+            Managers.PlayerInfoManager.SavePlayer();
         }
         
         private void SetGender(GenderType genderVal)
@@ -98,22 +102,30 @@ namespace playerChangeValue
         private void OnChangeName(string val)
         {
             name.text = val;
+            Managers.PlayerInfoManager.Player.name = val;
+            Managers.PlayerInfoManager.SavePlayer();
         }
 
         private void OnChangeAge(string val)
         {
             age.text = val;
+            Managers.PlayerInfoManager.Player.age = Convert.ToInt32(val);
+            Managers.PlayerInfoManager.SavePlayer();
         }
 
         private void OnChangeWeight(string val)
         {
             weight.text = val;
+            Managers.PlayerInfoManager.Player.weight = Convert.ToInt32(val);
+            Managers.PlayerInfoManager.SavePlayer();
         }
 
 
         private void OnChangeHeight(string val)
         {
             height.text = val;
+            Managers.PlayerInfoManager.Player.height = Convert.ToInt32(val);
+            Managers.PlayerInfoManager.SavePlayer();
         }
     }
 }

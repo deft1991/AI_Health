@@ -12,7 +12,7 @@ namespace global
 
         public void Startup()
         {
-            Debug.Log("Mission manager starting...");
+            Debug.Log("StuckManager starting...");
 
             Status = ManagerStatus.Initializing;
 

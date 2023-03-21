@@ -9,7 +9,7 @@ namespace global
         
         public void Startup()
         {
-            Debug.Log("Mission manager starting...");
+            Debug.Log("FillDataManager starting...");
             
             Status = ManagerStatus.Started;
             

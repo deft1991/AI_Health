@@ -13,7 +13,7 @@ namespace global
 
         public void Startup()
         {
-            Debug.Log("Mission manager starting...");
+            Debug.Log("ChatGPTSecurityManager starting...");
 
             // todo download state from prefs
 

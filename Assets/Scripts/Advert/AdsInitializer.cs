@@ -24,7 +24,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IG
     
     public void Startup()
     {
-        Debug.Log("Mission manager starting...");
+        Debug.Log("AdsInitializer starting...");
         Status = ManagerStatus.Initializing;
         
         Status = ManagerStatus.Started;

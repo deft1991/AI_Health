@@ -39,7 +39,7 @@ public class BannerAdExample : MonoBehaviour, IGameManager
     
     public void Startup()
     {
-        Debug.Log("Mission manager starting...");
+        Debug.Log("BannerAdExample starting...");
 
 
         Status = ManagerStatus.Initializing;

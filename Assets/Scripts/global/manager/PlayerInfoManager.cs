@@ -6,15 +6,21 @@ namespace global
 {
     public class PlayerInfoManager : MonoBehaviour, IGameManager
     {
+        
+        public static string WORKOUT_PROGRAM_RECOMMENDATION = "WORKOUT_PROGRAM_RECOMMENDATION";
+        public static string NUTRITION_PROGRAM_RECOMMENDATION = "NUTRITION_PROGRAM_RECOMMENDATION";
+        
         private static string PLAYER_KEY = "player";
         public ManagerStatus Status { get; private set; }
         public PlayerIfoDto Player { get; private set; }
 
-        public HashSet<MuscleGroupType> Programs { get; set; }
+        public HashSet<MuscleGroupType> WorkoutPrograms { get; set; }
+        public WorkoutDifficultyLevelType WorkoutDifficultyLevel { get; set; }
+        public int WorkoutDuration { get; set; }
 
         public void Startup()
         {
-            Debug.Log("Mission manager starting...");
+            Debug.Log("PlayerInfoManager starting...");
 
 
             Status = ManagerStatus.Initializing;

@@ -47,12 +47,12 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/systemEvents/ScreenChangeEvent.cs" />
      <Compile Include="Assets/Scripts/systemEvents/StartupEvent.cs" />
-     <Compile Include="Assets/Scripts/PlayerRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/Scripts/data/PlayerIfoDto.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTClient.cs" />
      <Compile Include="Assets/Scripts/global/manager/FillDataManager.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/workout/WorkoutDurationInputHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/Scripts/Advert/InterstitialAdExample.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerInputController.cs" />
@@ -69,6 +69,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets/Scripts/data/enums/WorkoutDifficultyLevelType.cs" />
      <Compile Include="Assets/Scripts/global/StartupController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
@@ -87,8 +88,10 @@
      <Compile Include="Assets/Scripts/Advert/BannerAdExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets/Scripts/PlayerNutritionProgramRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/MenuController.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/workout/WorkoutDifficultyLevelInputHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
      <Compile Include="Assets/Scripts/Advert/RewardedAdsButton.cs" />
@@ -116,14 +119,15 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
      <Compile Include="Assets/Scripts/systemEvents/RecommendationEvent.cs" />
+     <Compile Include="Assets/Scripts/PlayerWorkoutRecommendationController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
      <Compile Include="Assets/Scripts/Advert/BannerAdStarter.cs" />
      <Compile Include="Assets/Scripts/Messenger.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/DataTypes.cs" />
+     <Compile Include="Assets/Scripts/playerChangeValue/workout/WorkoutMuscleGroupInputHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets/Scripts/global/manager/PlayerInfoManager.cs" />
-     <Compile Include="Assets/Scripts/playerChangeValue/MuscleGroupInputHandler.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library/BuildInstructions" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -150,6 +154,7 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/Slider" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/license.txt" />
+     <Folder Include="Assets/Scripts/playerChangeValue/workout" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
      <Folder Include="Assets/Scripts/service" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal" />

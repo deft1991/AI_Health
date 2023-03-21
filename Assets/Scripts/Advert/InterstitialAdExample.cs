@@ -22,7 +22,7 @@ public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnit
 
     public void Startup()
     {
-        Debug.Log("Mission manager starting...");
+        Debug.Log("InterstitialAdExample starting...");
 
 
         Status = ManagerStatus.Initializing;

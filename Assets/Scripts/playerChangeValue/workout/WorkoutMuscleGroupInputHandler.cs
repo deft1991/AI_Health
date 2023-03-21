@@ -9,6 +9,7 @@ namespace playerChangeValue
     public class MuscleGroupInputHandler : MonoBehaviour
     {
         [SerializeField] private MuscleGroupToggle[] muscleGroupToggles;
+        [SerializeField] private Button nextButton;
 
         private HashSet<MuscleGroupType> programs;
 
@@ -17,7 +18,7 @@ namespace playerChangeValue
 
         public void OnClickNext()
         {
-            Managers.PlayerInfoManager.Programs = programs;
+            Managers.PlayerInfoManager.WorkoutPrograms = programs;
             Messenger.Broadcast(ScreenChangeEvent.GO_TO_WORK_DURATION);
         }
 
@@ -47,6 +48,8 @@ namespace playerChangeValue
             {
                 programs.Remove(muscleGroup.Type);
             }
+
+            nextButton.gameObject.SetActive(programs.Count > 0);
         }
 
         #endregion

@@ -25,7 +25,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 
     public void Startup()
     {
-        Debug.Log("Mission manager starting...");
+        Debug.Log("RewardedAdsButton starting...");
 
         Status = ManagerStatus.Initializing;
 
