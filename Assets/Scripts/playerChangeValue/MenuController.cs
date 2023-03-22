@@ -142,7 +142,7 @@ public class MenuController : MonoBehaviour
     public void GenerateNutritionProgramResult()
     {
         string recommendation = PlayerPrefs.GetString(PlayerInfoManager.NUTRITION_PROGRAM_RECOMMENDATION);
-        if (recommendation != null)
+        if (!string.IsNullOrEmpty(recommendation))
         {
             SetCurrentScreen(UiScreen.NutritionProgramRecommendation);
             Messenger<string>.Broadcast(RecommendationEvent.NUTRITION_PROGRAM_RECEIVED, recommendation);
