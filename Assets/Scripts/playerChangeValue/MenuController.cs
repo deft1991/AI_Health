@@ -46,6 +46,7 @@ public class MenuController : MonoBehaviour
     public void OpenSorry()
     {
         SetCurrentScreen(UiScreen.Sorry);
+        Managers.BannerAdExample.Start();
     }
 
     public void OpenNutritionProgram()

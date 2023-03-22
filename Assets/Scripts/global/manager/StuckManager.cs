@@ -18,13 +18,13 @@ namespace global
 
             StartCoroutine(WaitForASec(waitSec));
 
-            Status = ManagerStatus.Started;
             Debug.Log("FillDataManager: started");
         }
 
         public IEnumerator WaitForASec(float sec)
         {
             yield return new WaitForSeconds(sec);
+            Status = ManagerStatus.Started;
         }
     }
 }

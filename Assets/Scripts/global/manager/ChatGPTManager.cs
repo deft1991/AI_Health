@@ -30,7 +30,7 @@ namespace global
             SceneManager.LoadScene("MainAppScene");
         }
 
-        public async void GetNutritionProgramRecommendation()
+        public void GetNutritionProgramRecommendation()
         {
             Managers.InterstitialAdExample.LoadAd();
 
