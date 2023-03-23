@@ -118,6 +118,39 @@ namespace global
 
             StartCoroutine(ChatGPTClient.Instance.Ask(requestMessage, (r) => WorkoutProgramProcessResponse(r)));
         }
+        
+        public void GetMealRecommendation()
+        {
+            Managers.InterstitialAdExample.LoadAd();
+
+            Debug.Log("Get Meal Chat GPT recommendation");
+            Messenger.Broadcast(RecommendationEvent.MEAL_RECOMMENDATION_IN_PROCESS);
+
+            PlayerIfoDto playerIfoDto = Managers.PlayerInfoManager.Player;
+
+            string mealItems = String.Join(", ", Managers.MealInfoManager.Meal.mealItems.ToArray());
+            string mealOfTheDay = String.Join(", ", Managers.MealInfoManager.Meal.MealOfTheDayType.ToString());
+            
+            // string requestMessage = "generate nutrition program for %GOAL for: %AGE age, %GENDER, %HEIGHT sm height, %WEIGHT kg weight";
+            string requestMessageTemplate =
+                "Generate {0} with macronutrient breakdown and cook instructions " +
+                "by food: {1}" +
+                "For {2}. " +
+                "For {3} years old {4} with {6} cm length and {6} kg weight.";
+
+            var goal = GetGoalString(playerIfoDto);
+
+            string requestMessage = String.Format(requestMessageTemplate,
+                mealOfTheDay,
+                mealItems,
+                goal,
+                playerIfoDto.age.ToString(),
+                playerIfoDto.gender.ToString(),
+                playerIfoDto.height.ToString(),
+                playerIfoDto.weight.ToString());
+
+            StartCoroutine(ChatGPTClient.Instance.Ask(requestMessage, (r) => MealRecommendationProcessResponse(r)));
+        }
 
         private static string GetGoalString(PlayerIfoDto playerIfoDto)
         {
@@ -138,7 +171,7 @@ namespace global
             return goal;
         }
 
-        public void WorkoutProgramProcessResponse(MyCreateChatCompletionResponse response)
+        private void WorkoutProgramProcessResponse(MyCreateChatCompletionResponse response)
         {
             ChatMessage message = new ChatMessage();
             if (response.Choices != null && response.Choices.Count > 0)
@@ -153,6 +186,23 @@ namespace global
 
             Debug.Log("Workout Program completed: " + message.Content);
             Messenger<string>.Broadcast(RecommendationEvent.WORKOUT_PROGRAM_RECEIVED, message.Content);
+        }       
+        
+        private void MealRecommendationProcessResponse(MyCreateChatCompletionResponse response)
+        {
+            ChatMessage message = new ChatMessage();
+            if (response.Choices != null && response.Choices.Count > 0)
+            {
+                message = response.Choices[0].Message;
+                message.Content.Replace(" ", "  ");
+            }
+            else
+            {
+                Debug.LogWarning("No text was generated from this prompt.");
+            }
+
+            Debug.Log("Meal Recommendation completed: " + message.Content);
+            Messenger<string>.Broadcast(RecommendationEvent.MEAL_RECOMMENDATION_RECEIVED, message.Content);
         }
     }
 }

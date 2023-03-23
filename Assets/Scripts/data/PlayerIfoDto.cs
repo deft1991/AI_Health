@@ -10,5 +10,7 @@ namespace data
         public int weight;
         public int height;
         public NutritionProgramGoal goal;
+
+        public MealDto MealDto;
     }
 }

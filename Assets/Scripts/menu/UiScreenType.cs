@@ -1,4 +1,4 @@
-public enum UiScreen : byte
+public enum UiScreenType : byte
 {
     Name = 1,
     Age = 2,
@@ -15,5 +15,9 @@ public enum UiScreen : byte
     WorkoutDuration = 12,
     WorkoutDifficultyLevel = 13,
     WorkoutRecommendation = 14,
+    
+    MealOfTheDay = 15,
+    MealItems = 16,
+    MealRecommendation = 17,
     
 }

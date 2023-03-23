@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 
 public class MenuController : MonoBehaviour
 {
+    [Header("Nutrition Program")]
     [SerializeField] private CanvasGroup nameScreen;
     [SerializeField] private CanvasGroup ageScreen;
     [SerializeField] private CanvasGroup genderScreen;
@@ -15,37 +16,56 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup heightScreen;
     [SerializeField] private CanvasGroup goalScreen;
     [SerializeField] private CanvasGroup recommendationScreen;
+    
+    [Header("Other")]
     [SerializeField] private CanvasGroup sorryScreen;
     [SerializeField] private CanvasGroup aboutScreen;
+    
+    [Header("Profile Info")]
     [SerializeField] private CanvasGroup profileScreen;
+    
+    [Header("Workout")]
     [SerializeField] private CanvasGroup workoutMuscleGroupScreen;
     [SerializeField] private CanvasGroup workoutDurationScreen;
-    [SerializeField] private CanvasGroup workoutDifficultyLevel;
-    [SerializeField] private CanvasGroup workoutRecommendation;
+    [SerializeField] private CanvasGroup workoutDifficultyLevelScreen;
+    [SerializeField] private CanvasGroup workoutRecommendationScreen;    
+    
+    [Header("Meal")]
+    [SerializeField] private CanvasGroup mealOfTheDayScreen;
+    [SerializeField] private CanvasGroup mealItemsScreen;
+    [SerializeField] private CanvasGroup MealRecommendationScreen;
 
 
     private void Awake()
     {
+        // workout
         Messenger.AddListener(ScreenChangeEvent.GO_TO_WORK_DURATION, OpenWorkDuration);
         Messenger.AddListener(ScreenChangeEvent.GO_TO_WORK_WORKOUT_DIFFICULTY_LEVEL, OpenWorkDifficultyLevel);
         Messenger.AddListener(ScreenChangeEvent.GO_TO_WORK_WORKOUT_RECOMMENDATION, GenerateWorkoutRecommendation);
+        // meal
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_MEAL_ITEMS, OpenMealItems);
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_MEAL_RECOMMENDATION, OpenMealRecommendation);
     }
 
     private void OnDestroy()
     {
+        // workout
         Messenger.RemoveListener(ScreenChangeEvent.GO_TO_WORK_DURATION, OpenWorkDuration);
         Messenger.RemoveListener(ScreenChangeEvent.GO_TO_WORK_WORKOUT_DIFFICULTY_LEVEL, OpenWorkDifficultyLevel);
         Messenger.RemoveListener(ScreenChangeEvent.GO_TO_WORK_WORKOUT_RECOMMENDATION, GenerateWorkoutRecommendation);
+        // meal
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_MEAL_ITEMS, OpenMealItems);
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_MEAL_RECOMMENDATION, OpenMealRecommendation);
     }
 
     private void Start()
     {
-        SetCurrentScreen(UiScreen.Sorry);
+        SetCurrentScreen(UiScreenType.Sorry);
     }
 
     public void OpenSorry()
     {
-        SetCurrentScreen(UiScreen.Sorry);
+        SetCurrentScreen(UiScreenType.Sorry);
         Managers.BannerAdExample.Start();
     }
 
@@ -86,57 +106,72 @@ public class MenuController : MonoBehaviour
 
     public void OpenName()
     {
-        SetCurrentScreen(UiScreen.Name);
+        SetCurrentScreen(UiScreenType.Name);
     }
 
     public void OpenAge()
     {
-        SetCurrentScreen(UiScreen.Age);
+        SetCurrentScreen(UiScreenType.Age);
     }
 
     public void OpenGender()
     {
-        SetCurrentScreen(UiScreen.Gender);
+        SetCurrentScreen(UiScreenType.Gender);
     }
 
     public void OpenWeight()
     {
-        SetCurrentScreen(UiScreen.Weight);
+        SetCurrentScreen(UiScreenType.Weight);
     }
 
     public void OpenHeight()
     {
-        SetCurrentScreen(UiScreen.Height);
+        SetCurrentScreen(UiScreenType.Height);
     }
 
     public void OpenGoal()
     {
-        SetCurrentScreen(UiScreen.Goal);
+        SetCurrentScreen(UiScreenType.Goal);
     }
 
     public void OpenAbout()
     {
-        SetCurrentScreen(UiScreen.About);
+        SetCurrentScreen(UiScreenType.About);
     }
 
     public void OpenProfile()
     {
-        SetCurrentScreen(UiScreen.Profile);
+        SetCurrentScreen(UiScreenType.Profile);
     }
 
     public void OpenTrainingProgram()
     {
-        SetCurrentScreen(UiScreen.WorkoutMuscleGroupProgram);
+        SetCurrentScreen(UiScreenType.WorkoutMuscleGroupProgram);
     }
 
     public void OpenWorkDuration()
     {
-        SetCurrentScreen(UiScreen.WorkoutDuration);
+        SetCurrentScreen(UiScreenType.WorkoutDuration);
     }
 
     public void OpenWorkDifficultyLevel()
     {
-        SetCurrentScreen(UiScreen.WorkoutDifficultyLevel);
+        SetCurrentScreen(UiScreenType.WorkoutDifficultyLevel);
+    }
+    
+    public void OpenMealOfTheDay()
+    {
+        SetCurrentScreen(UiScreenType.MealOfTheDay);
+    }    
+    
+    public void OpenMealItems()
+    {
+        SetCurrentScreen(UiScreenType.MealItems);
+    }    
+    
+    public void OpenMealRecommendation()
+    {
+        GenerateMealRecommendationResult();
     }
 
     public void GenerateNutritionProgramResult()
@@ -144,7 +179,7 @@ public class MenuController : MonoBehaviour
         string recommendation = PlayerPrefs.GetString(PlayerInfoManager.NUTRITION_PROGRAM_RECOMMENDATION);
         if (!string.IsNullOrEmpty(recommendation))
         {
-            SetCurrentScreen(UiScreen.NutritionProgramRecommendation);
+            SetCurrentScreen(UiScreenType.NutritionProgramRecommendation);
             Messenger<string>.Broadcast(RecommendationEvent.NUTRITION_PROGRAM_RECEIVED, recommendation);
         }
         else
@@ -152,7 +187,7 @@ public class MenuController : MonoBehaviour
             Managers.InterstitialAdExample.ShowAd();
 
             Managers.PlayerInfoManager.SavePlayer();
-            SetCurrentScreen(UiScreen.NutritionProgramRecommendation);
+            SetCurrentScreen(UiScreenType.NutritionProgramRecommendation);
             Managers.ChatGPTManager.GetNutritionProgramRecommendation();
 
             Managers.InterstitialAdExample.LoadAd();
@@ -172,7 +207,7 @@ public class MenuController : MonoBehaviour
         // todo think about it
         Managers.InterstitialAdExample.ShowAd();
 
-        SetCurrentScreen(UiScreen.WorkoutRecommendation);
+        SetCurrentScreen(UiScreenType.WorkoutRecommendation);
         Managers.ChatGPTManager.GetWorkoutRecommendation();
         Managers.InterstitialAdExample.LoadAd();
     }
@@ -184,6 +219,22 @@ public class MenuController : MonoBehaviour
         Managers.ChatGPTManager.GetWorkoutRecommendation();
         Managers.InterstitialAdExample.LoadAd();
     }
+    
+    public void GenerateMealRecommendationResult()
+    {
+            Managers.InterstitialAdExample.ShowAd();
+            SetCurrentScreen(UiScreenType.MealRecommendation);
+            Managers.ChatGPTManager.GetMealRecommendation();
+            Managers.InterstitialAdExample.LoadAd();
+    }
+    
+    public void MealRecommendationTryAgain()
+    {
+        Managers.InterstitialAdExample.ShowAd();
+        Managers.ChatGPTManager.GetMealRecommendation();
+        Managers.InterstitialAdExample.LoadAd();
+    }
+
 
     // public void SelectLevel(int level)
     // {
@@ -191,21 +242,25 @@ public class MenuController : MonoBehaviour
     //     SceneManager.LoadScene("Level " + level);
     // }
 
-    private void SetCurrentScreen(UiScreen screen)
+    private void SetCurrentScreen(UiScreenType screenType)
     {
-        Utility.SetCanvasGroupEnabled(nameScreen, screen == UiScreen.Name);
-        Utility.SetCanvasGroupEnabled(ageScreen, screen == UiScreen.Age);
-        Utility.SetCanvasGroupEnabled(genderScreen, screen == UiScreen.Gender);
-        Utility.SetCanvasGroupEnabled(weightScreen, screen == UiScreen.Weight);
-        Utility.SetCanvasGroupEnabled(heightScreen, screen == UiScreen.Height);
-        Utility.SetCanvasGroupEnabled(goalScreen, screen == UiScreen.Goal);
-        Utility.SetCanvasGroupEnabled(recommendationScreen, screen == UiScreen.NutritionProgramRecommendation);
-        Utility.SetCanvasGroupEnabled(sorryScreen, screen == UiScreen.Sorry);
-        Utility.SetCanvasGroupEnabled(aboutScreen, screen == UiScreen.About);
-        Utility.SetCanvasGroupEnabled(profileScreen, screen == UiScreen.Profile);
-        Utility.SetCanvasGroupEnabled(workoutMuscleGroupScreen, screen == UiScreen.WorkoutMuscleGroupProgram);
-        Utility.SetCanvasGroupEnabled(workoutDurationScreen, screen == UiScreen.WorkoutDuration);
-        Utility.SetCanvasGroupEnabled(workoutDifficultyLevel, screen == UiScreen.WorkoutDifficultyLevel);
-        Utility.SetCanvasGroupEnabled(workoutRecommendation, screen == UiScreen.WorkoutRecommendation);
+        Utility.SetCanvasGroupEnabled(nameScreen, screenType == UiScreenType.Name);
+        Utility.SetCanvasGroupEnabled(ageScreen, screenType == UiScreenType.Age);
+        Utility.SetCanvasGroupEnabled(genderScreen, screenType == UiScreenType.Gender);
+        Utility.SetCanvasGroupEnabled(weightScreen, screenType == UiScreenType.Weight);
+        Utility.SetCanvasGroupEnabled(heightScreen, screenType == UiScreenType.Height);
+        Utility.SetCanvasGroupEnabled(goalScreen, screenType == UiScreenType.Goal);
+        Utility.SetCanvasGroupEnabled(recommendationScreen, screenType == UiScreenType.NutritionProgramRecommendation);
+        Utility.SetCanvasGroupEnabled(sorryScreen, screenType == UiScreenType.Sorry);
+        Utility.SetCanvasGroupEnabled(aboutScreen, screenType == UiScreenType.About);
+        Utility.SetCanvasGroupEnabled(profileScreen, screenType == UiScreenType.Profile);
+        Utility.SetCanvasGroupEnabled(workoutMuscleGroupScreen, screenType == UiScreenType.WorkoutMuscleGroupProgram);
+        Utility.SetCanvasGroupEnabled(workoutDurationScreen, screenType == UiScreenType.WorkoutDuration);
+        Utility.SetCanvasGroupEnabled(workoutDifficultyLevelScreen, screenType == UiScreenType.WorkoutDifficultyLevel);
+        Utility.SetCanvasGroupEnabled(workoutRecommendationScreen, screenType == UiScreenType.WorkoutRecommendation);
+        
+        Utility.SetCanvasGroupEnabled(mealOfTheDayScreen, screenType == UiScreenType.MealOfTheDay);
+        Utility.SetCanvasGroupEnabled(mealItemsScreen, screenType == UiScreenType.MealItems);
+        Utility.SetCanvasGroupEnabled(MealRecommendationScreen, screenType == UiScreenType.MealRecommendation);
     }
 }
