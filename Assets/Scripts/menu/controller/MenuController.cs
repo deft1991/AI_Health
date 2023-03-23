@@ -8,30 +8,28 @@ using UnityEngine.Serialization;
 
 public class MenuController : MonoBehaviour
 {
-    [Header("Nutrition Program")]
-    [SerializeField] private CanvasGroup nameScreen;
+    [Header("Nutrition Program")] [SerializeField]
+    private CanvasGroup nameScreen;
+
     [SerializeField] private CanvasGroup ageScreen;
     [SerializeField] private CanvasGroup genderScreen;
     [SerializeField] private CanvasGroup weightScreen;
     [SerializeField] private CanvasGroup heightScreen;
     [SerializeField] private CanvasGroup goalScreen;
     [SerializeField] private CanvasGroup recommendationScreen;
-    
-    [Header("Other")]
-    [SerializeField] private CanvasGroup sorryScreen;
+
+    [Header("Other")] [SerializeField] private CanvasGroup sorryScreen;
     [SerializeField] private CanvasGroup aboutScreen;
-    
-    [Header("Profile Info")]
-    [SerializeField] private CanvasGroup profileScreen;
-    
-    [Header("Workout")]
-    [SerializeField] private CanvasGroup workoutMuscleGroupScreen;
+
+    [Header("Profile Info")] [SerializeField]
+    private CanvasGroup profileScreen;
+
+    [Header("Workout")] [SerializeField] private CanvasGroup workoutMuscleGroupScreen;
     [SerializeField] private CanvasGroup workoutDurationScreen;
     [SerializeField] private CanvasGroup workoutDifficultyLevelScreen;
-    [SerializeField] private CanvasGroup workoutRecommendationScreen;    
-    
-    [Header("Meal")]
-    [SerializeField] private CanvasGroup mealOfTheDayScreen;
+    [SerializeField] private CanvasGroup workoutRecommendationScreen;
+
+    [Header("Meal")] [SerializeField] private CanvasGroup mealOfTheDayScreen;
     [SerializeField] private CanvasGroup mealItemsScreen;
     [SerializeField] private CanvasGroup MealRecommendationScreen;
 
@@ -158,17 +156,17 @@ public class MenuController : MonoBehaviour
     {
         SetCurrentScreen(UiScreenType.WorkoutDifficultyLevel);
     }
-    
+
     public void OpenMealOfTheDay()
     {
         SetCurrentScreen(UiScreenType.MealOfTheDay);
-    }    
-    
+    }
+
     public void OpenMealItems()
     {
         SetCurrentScreen(UiScreenType.MealItems);
-    }    
-    
+    }
+
     public void OpenMealRecommendation()
     {
         GenerateMealRecommendationResult();
@@ -184,55 +182,43 @@ public class MenuController : MonoBehaviour
         }
         else
         {
-            Managers.InterstitialAdExample.ShowAd();
-
+            Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
             Managers.PlayerInfoManager.SavePlayer();
             SetCurrentScreen(UiScreenType.NutritionProgramRecommendation);
             Managers.ChatGPTManager.GetNutritionProgramRecommendation();
-
-            Managers.InterstitialAdExample.LoadAd();
         }
     }
-    
+
     public void NutritionProgramTryAgain()
     {
-        // todo open unity ads
-        Managers.InterstitialAdExample.ShowAd();
+        Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
         Managers.ChatGPTManager.GetNutritionProgramRecommendation();
-        Managers.InterstitialAdExample.LoadAd();
     }
 
     public void GenerateWorkoutRecommendation()
     {
-        // todo think about it
-        Managers.InterstitialAdExample.ShowAd();
-
+        Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
         SetCurrentScreen(UiScreenType.WorkoutRecommendation);
         Managers.ChatGPTManager.GetWorkoutRecommendation();
-        Managers.InterstitialAdExample.LoadAd();
     }
 
     public void WorkoutTryAgain()
     {
-        // todo open unity ads
-        Managers.InterstitialAdExample.ShowAd();
+        Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
         Managers.ChatGPTManager.GetWorkoutRecommendation();
-        Managers.InterstitialAdExample.LoadAd();
     }
-    
+
     public void GenerateMealRecommendationResult()
     {
-            Managers.InterstitialAdExample.ShowAd();
-            SetCurrentScreen(UiScreenType.MealRecommendation);
-            Managers.ChatGPTManager.GetMealRecommendation();
-            Managers.InterstitialAdExample.LoadAd();
+        Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
+        SetCurrentScreen(UiScreenType.MealRecommendation);
+        Managers.ChatGPTManager.GetMealRecommendation();
     }
-    
+
     public void MealRecommendationTryAgain()
     {
-        Managers.InterstitialAdExample.ShowAd();
+        Messenger.Broadcast(AdvEvent.SHOW_INTERSTITIAL);
         Managers.ChatGPTManager.GetMealRecommendation();
-        Managers.InterstitialAdExample.LoadAd();
     }
 
 
@@ -258,7 +244,7 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(workoutDurationScreen, screenType == UiScreenType.WorkoutDuration);
         Utility.SetCanvasGroupEnabled(workoutDifficultyLevelScreen, screenType == UiScreenType.WorkoutDifficultyLevel);
         Utility.SetCanvasGroupEnabled(workoutRecommendationScreen, screenType == UiScreenType.WorkoutRecommendation);
-        
+
         Utility.SetCanvasGroupEnabled(mealOfTheDayScreen, screenType == UiScreenType.MealOfTheDay);
         Utility.SetCanvasGroupEnabled(mealItemsScreen, screenType == UiScreenType.MealItems);
         Utility.SetCanvasGroupEnabled(MealRecommendationScreen, screenType == UiScreenType.MealRecommendation);

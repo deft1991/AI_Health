@@ -95,7 +95,7 @@ public class BannerAdExample : MonoBehaviour, IGameManager
     }
 
     // Implement a method to call when the Show Banner button is clicked:
-    void ShowBannerAd()
+    public void ShowBannerAd()
     {
         // Set up options to notify the SDK of show events:
         BannerOptions options = new BannerOptions

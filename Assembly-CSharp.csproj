@@ -64,6 +64,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/Scripts/global/manager/MealInfoManager.cs" />
+     <Compile Include="Assets/Scripts/Advert/event/AdvEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/Scripts/service/profile/ProfileViewService.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets/Scripts/global/StartupController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
+     <Compile Include="Assets/Scripts/global/manager/ShowAdManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
      <Compile Include="Assets/Samples/OpenAI Unity/0.1.9/ChatGPT/ChatGPT.cs" />
      <Compile Include="Assets/Scripts/meal/input/MealOfTheDayInputHandler.cs" />
@@ -91,6 +93,7 @@
      <Compile Include="Assets/Scripts/util/Logger.cs" />
      <Compile Include="Assets/Scripts/systemEvents/ProfileChangeEvent.cs" />
      <Compile Include="Assets/Scripts/Advert/BannerAdExample.cs" />
+     <Compile Include="Assets/Scripts/global/inapp/MyIAPManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
@@ -198,6 +201,7 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/square/buttons" />
      <Folder Include="Assets/TextMesh Pro" />
      <Folder Include="Assets/SimplePixelUI/fonts" />
+     <None Include="Assets/Resources/BillingMode.json" />
      <None Include="Assets/Resources/auth.json" />
      <Folder Include="Assets/SimplePixelUI" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible" />
@@ -228,6 +232,7 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical" />
      <Folder Include="Assets/SimplePixelUI/prefabs" />
+     <None Include="Assets/Resources/IAPProductCatalog.json" />
      <Folder Include="Assets/Font/pixelfont2" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <Folder Include="Assets/TextMesh Pro/Shaders" />
@@ -249,6 +254,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded" />
+     <Folder Include="Assets/Scripts/Advert/event" />
      <Folder Include="Assets/Scripts/data/enums" />
      <None Include="Assets/SimplePixelUI/fonts/Font1/readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
@@ -265,6 +271,7 @@
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/toogle" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/slider3" />
+     <Folder Include="Assets/Scripts/global/inapp" />
      <Folder Include="Assets/TextMesh Pro/Documentation" />
      <Folder Include="Assets/Scripts/util" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras" />
@@ -952,14 +959,26 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEngine.Purchasing.Codeless">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+     </Reference>
      <Reference Include="PsdPlugin">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Services.Analytics.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.Common.Path.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Path.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Purchasing">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
@@ -973,11 +992,17 @@
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.Advertisements">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+     <Reference Include="Purchasing.Common">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Advertisements">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.Purchasing">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
@@ -1006,6 +1031,9 @@
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEngine.Purchasing.SecurityStub">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.Animation.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
      </Reference>
@@ -1024,6 +1052,9 @@
      <Reference Include="Unity.TextMeshPro">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEngine.Purchasing.SecurityCore">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
@@ -1032,9 +1063,6 @@
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
@@ -1051,6 +1079,9 @@
      <Reference Include="Unity.Mathematics">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
@@ -1065,6 +1096,9 @@
      </Reference>
      <Reference Include="Unity.2D.Psdimporter.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Purchasing.Stores">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>

@@ -19,6 +19,7 @@ using UnityEngine;
 [RequireComponent(typeof(RewardedAdsButton))]
 [RequireComponent(typeof(MealInfoManager))]
 [RequireComponent(typeof(StuckManager))]
+[RequireComponent(typeof(ShowAdManager))]
 public class Managers : MonoBehaviour
 {
     
@@ -31,6 +32,7 @@ public class Managers : MonoBehaviour
     public static RewardedAdsButton RewardedAdsButton { get; private set; }
     public static MealInfoManager MealInfoManager { get; private set; }
     public static StuckManager StuckManager { get; private set; }
+    public static ShowAdManager ShowAdManager { get; private set; }
 
     /*
      * List of all IGameManagers
@@ -54,6 +56,7 @@ public class Managers : MonoBehaviour
         RewardedAdsButton = GetComponent<RewardedAdsButton>();
         MealInfoManager = GetComponent<MealInfoManager>();
         StuckManager = GetComponent<StuckManager>();
+        ShowAdManager = GetComponent<ShowAdManager>();
 
         _startSequence = new List<IGameManager>();
         _startSequence.Add(AdsInitializer);
@@ -62,6 +65,7 @@ public class Managers : MonoBehaviour
         _startSequence.Add(PlayerInfoManager);
         _startSequence.Add(MealInfoManager);
         _startSequence.Add(StuckManager);
+        _startSequence.Add(ShowAdManager);
         // _startSequence.Add(BannerAdExample);
         // _startSequence.Add(InterstitialAdExample);
         // _startSequence.Add(RewardedAdsButton);
