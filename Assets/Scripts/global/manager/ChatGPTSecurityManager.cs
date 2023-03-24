@@ -1,10 +1,9 @@
 using data;
-using UnityEditor;
 using UnityEngine;
 
-namespace global
+namespace global.manager
 {
-    public class ChatGPTSecurityManager : MonoBehaviour, IGameManager
+    public class ChatGptSecurityManager : MonoBehaviour, IGameManager
     {
         private static string AUTH_FILE = "auth.json";
 
@@ -22,6 +21,7 @@ namespace global
             //Then use JsonUtility.FromJson<T>() to deserialize jsonTextFile into an object
             ChatGPTSecurity = JsonUtility.FromJson<ChatGPTSecurityDto>(jsonTextFile.text);
             
+            Status = ManagerStatus.Started;
             Debug.Log("ChatGPTSecurityManager: started");
         }
     }

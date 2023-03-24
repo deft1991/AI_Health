@@ -1,7 +1,9 @@
 using System;
+using advert.@event;
+using global.inapp;
 using UnityEngine;
 
-namespace global
+namespace global.manager
 {
     public class ShowAdManager : MonoBehaviour, IGameManager
     {
@@ -23,41 +25,53 @@ namespace global
 
         private void OnShowBanner()
         {
-            try
+            bool hasGoogleSubscription = Managers.MyIAPManager.hasGoogleSubscription(MyIAPManager.TEST_SUB);
+            if (!hasGoogleSubscription)
             {
-                Managers.BannerAdExample.LoadBanner();
-                Managers.BannerAdExample.ShowBannerAd();
-            }
-            catch (Exception ex)
-            {
-                Debug.Log("ShowAdManager ex: " + ex);
+                try
+                {
+                    Managers.BannerAdExample.LoadBanner();
+                    Managers.BannerAdExample.ShowBannerAd();
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log("ShowAdManager ex: " + ex);
+                }
             }
         }
 
         private void OnShowRewarded()
         {
-            try
+            bool hasGoogleSubscription = Managers.MyIAPManager.hasGoogleSubscription(MyIAPManager.TEST_SUB);
+            if (!hasGoogleSubscription)
             {
-                Managers.RewardedAdsButton.LoadAd();
-                Managers.RewardedAdsButton.ShowAd();
-            }
-            catch (Exception ex)
-            {
-                Debug.Log("ShowAdManager ex: " + ex);
+                try
+                {
+                    Managers.RewardedAdsButton.LoadAd();
+                    Managers.RewardedAdsButton.ShowAd();
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log("ShowAdManager ex: " + ex);
+                }
             }
         }
 
 
         private void OnShowInterstitial()
         {
-            try
+            bool hasGoogleSubscription = Managers.MyIAPManager.hasGoogleSubscription(MyIAPManager.TEST_SUB);
+            if (!hasGoogleSubscription)
             {
-                Managers.InterstitialAdExample.LoadAd();
-                Managers.InterstitialAdExample.ShowAd();
-            }
-            catch (Exception ex)
-            {
-                Debug.Log("ShowAdManager ex: " + ex);
+                try
+                {
+                    Managers.InterstitialAdExample.LoadAd();
+                    Managers.InterstitialAdExample.ShowAd();
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log("ShowAdManager ex: " + ex);
+                }
             }
         }
     }

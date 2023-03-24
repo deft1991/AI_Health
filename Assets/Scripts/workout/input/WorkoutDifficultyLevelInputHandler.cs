@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using data;
+using global;
 using UnityEngine;
 using UnityEngine.UI;
 

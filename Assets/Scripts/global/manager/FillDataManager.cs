@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace global
+namespace global.manager
 {
     public class FillDataManager : MonoBehaviour, IGameManager
     {

@@ -47,13 +47,14 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/systemEvents/ScreenChangeEvent.cs" />
      <Compile Include="Assets/Scripts/systemEvents/StartupEvent.cs" />
+     <Compile Include="Assets/Scripts/advert/AdsInitializerManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
+     <Compile Include="Assets/Scripts/advert/RewardedAdsButton.cs" />
      <Compile Include="Assets/Scripts/data/PlayerIfoDto.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTClient.cs" />
      <Compile Include="Assets/Scripts/global/manager/FillDataManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
-     <Compile Include="Assets/Scripts/Advert/InterstitialAdExample.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerInputController.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGender.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTTester.cs" />
@@ -64,13 +65,14 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/Scripts/global/manager/MealInfoManager.cs" />
-     <Compile Include="Assets/Scripts/Advert/event/AdvEvent.cs" />
+     <Compile Include="Assets/Scripts/iap/event/IapEvent.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/Scripts/service/profile/ProfileViewService.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
      <Compile Include="Assets/Scripts/global/StartupController.cs" />
+     <Compile Include="Assets/Scripts/advert/InterstitialAdExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
      <Compile Include="Assets/Scripts/global/manager/ShowAdManager.cs" />
@@ -79,8 +81,8 @@
      <Compile Include="Assets/Scripts/meal/input/MealOfTheDayInputHandler.cs" />
      <Compile Include="Assets/Scripts/meal/event/MealEvent.cs" />
      <Compile Include="Assets/Scripts/util/Singleton.cs" />
-     <Compile Include="Assets/Scripts/Advert/AdsInitializer.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
+     <Compile Include="Assets/Scripts/advert/BannerAdStarter.cs" />
      <Compile Include="Assets/Scripts/ManagerStatus.cs" />
      <Compile Include="Assets/Scripts/workout/input/WorkoutDurationInputHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
@@ -90,9 +92,9 @@
      <Compile Include="Assets/Scripts/meal/input/MealItemsInputHandler.cs" />
      <Compile Include="Assets/Scripts/menu/controller/MenuController.cs" />
      <Compile Include="Assets/Scripts/util/GridLayoutHelper.cs" />
+     <Compile Include="Assets/Scripts/advert/event/AdvEvent.cs" />
      <Compile Include="Assets/Scripts/util/Logger.cs" />
      <Compile Include="Assets/Scripts/systemEvents/ProfileChangeEvent.cs" />
-     <Compile Include="Assets/Scripts/Advert/BannerAdExample.cs" />
      <Compile Include="Assets/Scripts/global/inapp/MyIAPManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -100,7 +102,6 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/PlayerNutritionProgramRecommendationController.cs" />
-     <Compile Include="Assets/Scripts/Advert/RewardedAdsButton.cs" />
      <Compile Include="Assets/Scripts/meal/input/DishInputHandler.cs" />
      <Compile Include="Assets/Scripts/global/manager/ChatGPTSecurityManager.cs" />
      <Compile Include="Assets/Scripts/meal/data/MealOfTheDayType.cs" />
@@ -119,6 +120,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
+     <Compile Include="Assets/Scripts/advert/service/SubscribeService.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets/Scripts/global/manager/StuckManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
@@ -129,6 +131,7 @@
      <Compile Include="Assets/Scripts/IGameManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
+     <Compile Include="Assets/Scripts/advert/BannerAdExample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
      <Compile Include="Assets/Scripts/menu/UiScreenType.cs" />
      <Compile Include="Assets/Scripts/systemEvents/RecommendationEvent.cs" />
@@ -136,7 +139,6 @@
      <Compile Include="Assets/Scripts/workout/input/WorkoutMuscleGroupInputHandler.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
      <Compile Include="Assets/Scripts/data/MealDto.cs" />
-     <Compile Include="Assets/Scripts/Advert/BannerAdStarter.cs" />
      <Compile Include="Assets/Scripts/Messenger.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/DataTypes.cs" />
      <Compile Include="Assets/Scripts/workout/input/WorkoutDifficultyLevelInputHandler.cs" />
@@ -149,6 +151,7 @@
      <Folder Include="Assets/Scripts/playerChangeValue" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded" />
+     <Folder Include="Assets/Scripts/iap" />
      <Folder Include="Assets/Scripts/chatGPT/data" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
@@ -189,6 +192,7 @@
      <Folder Include="Assets/SimplePixelUI/artwork/gray/square" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible" />
      <Folder Include="Assets/Scripts/meal" />
+     <Folder Include="Assets/Scripts/iap/event" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1" />
      <Folder Include="Assets/Samples/OpenAI Unity/0.1.9/ChatGPT" />
      <Folder Include="Assets/Scripts/global" />
@@ -254,7 +258,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded" />
-     <Folder Include="Assets/Scripts/Advert/event" />
+     <Folder Include="Assets/Scripts/advert/event" />
      <Folder Include="Assets/Scripts/data/enums" />
      <None Include="Assets/SimplePixelUI/fonts/Font1/readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
@@ -263,6 +267,7 @@
      <Folder Include="Assets/Scripts/systemEvents" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/readme.txt" />
      <Folder Include="Assets/Scripts/meal/input" />
+     <Folder Include="Assets/Scripts/advert/service" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <Folder Include="Assets/Scripts/meal/controller" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
@@ -282,7 +287,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
-     <Folder Include="Assets/Scripts/Advert" />
+     <Folder Include="Assets/Scripts/advert" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray/rounded" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />

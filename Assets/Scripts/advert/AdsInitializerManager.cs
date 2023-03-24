@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener, IGameManager
+public class AdsInitializerManager : MonoBehaviour, IUnityAdsInitializationListener, IGameManager
 {
     [SerializeField] string _androidGameId;
     [SerializeField] string _iOsGameId;

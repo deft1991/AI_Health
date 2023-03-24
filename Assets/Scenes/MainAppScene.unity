@@ -12390,9 +12390,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1464492296}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MyIAPManager, Assembly-CSharp
-        m_MethodName: BuyNoAds
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16201,7 +16201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
       propertyPath: _testMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
       propertyPath: _iOsGameId
@@ -16215,7 +16215,11 @@ PrefabInstance:
       propertyPath: _enablePerPlacementMode
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 1388446114487814704, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 1898350693472443288, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 6174744343535812590, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19884,27 +19888,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1464492297}
-  - component: {fileID: 1464492296}
+  - component: {fileID: 1464492298}
   m_Layer: 0
-  m_Name: IAPManager
+  m_Name: Services
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1464492296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464492295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a8d881cbcd4d58899aab31abd6e4e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myText: {fileID: 1871204585}
 --- !u!4 &1464492297
 Transform:
   m_ObjectHideFlags: 0
@@ -19913,13 +19904,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464492295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 208.4578, y: 1484.948, z: -13.509807}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464492298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464492295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce21f3ee16741179a34479230e5d03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removeAdvButton: {fileID: 909089340}
 --- !u!1 &1496854671
 GameObject:
   m_ObjectHideFlags: 0

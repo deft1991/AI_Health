@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using advert.@event;
 using chatGPT.data;
 using data;
 using OpenAI;
@@ -10,9 +11,9 @@ using UnityEngine.SceneManagement;
 using ChatMessage = chatGPT.data.ChatMessage;
 using Logger = playerChangeValue.util.Logger;
 
-namespace global
+namespace global.manager
 {
-    public class ChatGPTManager : MonoBehaviour, IGameManager
+    public class ChatGptManager : MonoBehaviour, IGameManager
     {
         public ManagerStatus Status { get; private set; }
         private OpenAIApi openai = new OpenAIApi("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");
@@ -32,7 +33,6 @@ namespace global
 
         public void GetNutritionProgramRecommendation()
         {
-            Managers.InterstitialAdExample.LoadAd();
 
             Debug.Log("Get Chat GPT Nutrition program recommendation");
             Messenger.Broadcast(RecommendationEvent.NUTRITION_PROGRAM_IN_PROCESS);
@@ -85,7 +85,6 @@ namespace global
 
         public async void GetWorkoutRecommendation()
         {
-            Managers.InterstitialAdExample.LoadAd();
 
             Debug.Log("Get Workout Chat GPT recommendation");
             Messenger.Broadcast(RecommendationEvent.WORKOUT_PROGRAM_IN_PROCESS);
@@ -121,8 +120,6 @@ namespace global
         
         public void GetMealRecommendation()
         {
-            Managers.InterstitialAdExample.LoadAd();
-
             Debug.Log("Get Meal Chat GPT recommendation");
             Messenger.Broadcast(RecommendationEvent.MEAL_RECOMMENDATION_IN_PROCESS);
 

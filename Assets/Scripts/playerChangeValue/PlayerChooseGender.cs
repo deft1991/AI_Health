@@ -1,4 +1,5 @@
 using data;
+using global;
 using UnityEngine;
 using UnityEngine.UI;
 

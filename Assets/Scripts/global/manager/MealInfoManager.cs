@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using data;
 using UnityEngine;
 
-namespace global
+namespace global.manager
 {
     public class MealInfoManager : MonoBehaviour, IGameManager
     {

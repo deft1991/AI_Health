@@ -925,7 +925,11 @@ PrefabInstance:
       propertyPath: _enablePerPlacementMode
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2645816127685880430, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 1388446114487814704, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 1898350693472443288, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
+    - {fileID: 6174744343535812590, guid: 42b471efc7f11436a9beacdd62f3808f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

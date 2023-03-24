@@ -1,7 +1,7 @@
-using System;
+using global;
 using UnityEngine;
 
-namespace playerChangeValue.Advert
+namespace advert
 {
     public class BannerAdStarter : MonoBehaviour
     {
