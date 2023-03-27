@@ -5777,8 +5777,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Your nutrition program is preparing...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
-  m_sharedMaterial: {fileID: 811773398191683472, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10822,8 +10822,8 @@ MonoBehaviour:
     looking to improve their nutrition and overall wellbeing. Download it today and
     start taking control of your health with the power of AI."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
-  m_sharedMaterial: {fileID: 811773398191683472, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16401,7 +16401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1172961375
 Transform:
   m_ObjectHideFlags: 0
@@ -23927,7 +23927,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789377522}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -24977,8 +24977,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Your nutrition program is preparing...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
-  m_sharedMaterial: {fileID: 811773398191683472, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26511,8 +26511,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Your  meal  recommendation \nis preparing..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
-  m_sharedMaterial: {fileID: 811773398191683472, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

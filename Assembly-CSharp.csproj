@@ -214,6 +214,7 @@
      <Folder Include="Assets/Scripts/workout/input" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources" />
+     <None Include="Assets/TextMesh Pro/Glyph Report.txt" />
      <Folder Include="Assets/Scripts/global/manager" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/Health_bar" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
@@ -237,7 +238,6 @@
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical" />
      <Folder Include="Assets/SimplePixelUI/prefabs" />
      <None Include="Assets/Resources/IAPProductCatalog.json" />
-     <Folder Include="Assets/Font/pixelfont2" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <Folder Include="Assets/TextMesh Pro/Shaders" />
      <Folder Include="Assets/Scripts/menu/controller" />
@@ -246,6 +246,7 @@
      <Folder Include="Assets/Scripts/workout/data" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
+     <Folder Include="Assets/Font/lunchtime-doubly-so" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/buttons" />
@@ -263,6 +264,7 @@
      <None Include="Assets/SimplePixelUI/fonts/Font1/readme.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Scripts/chatGPT" />
+     <Folder Include="Assets/Font/rounded-pixel-7" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/square" />
      <Folder Include="Assets/Scripts/systemEvents" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/readme.txt" />
