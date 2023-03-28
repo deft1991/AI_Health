@@ -1,12 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using advert.@event;
 using data;
 using global;
 using global.manager;
+using nutritionProgram.history.@event;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class MenuController : MonoBehaviour
 {
@@ -19,6 +16,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup heightScreen;
     [SerializeField] private CanvasGroup goalScreen;
     [SerializeField] private CanvasGroup recommendationScreen;
+    [SerializeField] private CanvasGroup saveNutritionProgramScreen;
 
     [Header("Other")] [SerializeField] private CanvasGroup sorryScreen;
     [SerializeField] private CanvasGroup aboutScreen;
@@ -35,6 +33,9 @@ public class MenuController : MonoBehaviour
     [SerializeField] private CanvasGroup mealItemsScreen;
     [SerializeField] private CanvasGroup MealRecommendationScreen;
 
+    [Header("History")] [SerializeField] private CanvasGroup historyRecommendationProgramScreen;
+    [SerializeField] private CanvasGroup historyItemDetailedScreen;
+
 
     private void Awake()
     {
@@ -45,6 +46,10 @@ public class MenuController : MonoBehaviour
         // meal
         Messenger.AddListener(ScreenChangeEvent.GO_TO_MEAL_ITEMS, OpenMealItems);
         Messenger.AddListener(ScreenChangeEvent.GO_TO_MEAL_RECOMMENDATION, OpenMealRecommendation);
+
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_NUTRITION_PROGRAM_RECOMMENDATION, GenerateNutritionProgramResult);
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_NUTRITION_PROGRAM_HISTORY, OpenHistoryNutritionProgram);
+        Messenger.AddListener(ScreenChangeEvent.GO_TO_DETAILED_NUTRITION_PROGRAM_ITEM_HISTORY, OpenNutritionProgramHistoryItemDetailed);
     }
 
     private void OnDestroy()
@@ -56,6 +61,12 @@ public class MenuController : MonoBehaviour
         // meal
         Messenger.RemoveListener(ScreenChangeEvent.GO_TO_MEAL_ITEMS, OpenMealItems);
         Messenger.RemoveListener(ScreenChangeEvent.GO_TO_MEAL_RECOMMENDATION, OpenMealRecommendation);
+
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_NUTRITION_PROGRAM_RECOMMENDATION,
+            GenerateNutritionProgramResult);
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_NUTRITION_PROGRAM_HISTORY, OpenHistoryNutritionProgram);
+        
+        Messenger.RemoveListener(ScreenChangeEvent.GO_TO_DETAILED_NUTRITION_PROGRAM_ITEM_HISTORY, OpenNutritionProgramHistoryItemDetailed);
     }
 
     private void Start()
@@ -169,6 +180,22 @@ public class MenuController : MonoBehaviour
         SetCurrentScreen(UiScreenType.MealItems);
     }
 
+    public void OpenHistoryNutritionProgram()
+    {
+        SetCurrentScreen(UiScreenType.HistoryNutritionProgramScreen);
+        Messenger.Broadcast(NutritionProgramHistoryEvent.SHOW_HISTORY);
+    }
+
+    public void OpenSaveNutritionProgram()
+    {
+        SetCurrentScreen(UiScreenType.SaveNutritionProgramScreen);
+    }
+    
+    public void OpenNutritionProgramHistoryItemDetailed()
+    {
+        SetCurrentScreen(UiScreenType.NutritionProgramHistoryItemDetailedScreen);
+    }
+
     public void OpenMealRecommendation()
     {
         GenerateMealRecommendationResult();
@@ -250,5 +277,12 @@ public class MenuController : MonoBehaviour
         Utility.SetCanvasGroupEnabled(mealOfTheDayScreen, screenType == UiScreenType.MealOfTheDay);
         Utility.SetCanvasGroupEnabled(mealItemsScreen, screenType == UiScreenType.MealItems);
         Utility.SetCanvasGroupEnabled(MealRecommendationScreen, screenType == UiScreenType.MealRecommendation);
+
+        Utility.SetCanvasGroupEnabled(historyRecommendationProgramScreen,
+            screenType == UiScreenType.HistoryNutritionProgramScreen);
+        Utility.SetCanvasGroupEnabled(saveNutritionProgramScreen,
+            screenType == UiScreenType.SaveNutritionProgramScreen);
+        Utility.SetCanvasGroupEnabled(historyItemDetailedScreen,
+            screenType == UiScreenType.NutritionProgramHistoryItemDetailedScreen);
     }
 }

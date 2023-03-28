@@ -8,4 +8,10 @@ public class ScreenChangeEvent : MonoBehaviour
     
     public const string GO_TO_MEAL_ITEMS = "GO_TO_MEAL_ITEMS";
     public const string GO_TO_MEAL_RECOMMENDATION = "GO_TO_MEAL_RECOMENDATIONS";
+    
+    public const string GO_TO_NUTRITION_PROGRAM_RECOMMENDATION = "GO_TO_NUTRITION_PROGRAM_RECOMMENDATION";
+    
+    public const string GO_TO_NUTRITION_PROGRAM_HISTORY = "GO_TO_NUTRITION_PROGRAM_HISTORY";
+    
+    public const string GO_TO_DETAILED_NUTRITION_PROGRAM_ITEM_HISTORY = "GO_TO_DETAILED_NUTRITION_PROGRAM_ITEM_HISTORY";
 }

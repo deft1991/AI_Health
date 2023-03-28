@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using advert;
 using global.inapp;
 using global.manager;
+using nutritionProgram.service;
 using UnityEngine;
 
 
@@ -22,6 +23,7 @@ namespace global
     [RequireComponent(typeof(StuckManager))]
     [RequireComponent(typeof(ShowAdManager))]
     [RequireComponent(typeof(MyIAPManager))]
+    [RequireComponent(typeof(NutritionProgramHistoryManager))]
     public class Managers : MonoBehaviour
     {
     
@@ -36,6 +38,7 @@ namespace global
         public static StuckManager StuckManager { get; private set; }
         public static ShowAdManager ShowAdManager { get; private set; }
         public static MyIAPManager MyIAPManager { get; private set; }
+        public static NutritionProgramHistoryManager NutritionProgramHistoryManager { get; private set; }
 
         /*
      * List of all IGameManagers
@@ -61,6 +64,7 @@ namespace global
             StuckManager = GetComponent<StuckManager>();
             ShowAdManager = GetComponent<ShowAdManager>();
             MyIAPManager = GetComponent<MyIAPManager>();
+            NutritionProgramHistoryManager = GetComponent<NutritionProgramHistoryManager>();
 
             _startSequence = new List<IGameManager>();
             _startSequence.Add(AdsInitializerManager);
@@ -71,6 +75,7 @@ namespace global
             _startSequence.Add(StuckManager);
             _startSequence.Add(ShowAdManager);
             _startSequence.Add(MyIAPManager);
+            _startSequence.Add(NutritionProgramHistoryManager);
             // _startSequence.Add(BannerAdExample);
             // _startSequence.Add(InterstitialAdExample);
             // _startSequence.Add(RewardedAdsButton);

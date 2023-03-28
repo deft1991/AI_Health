@@ -33,7 +33,7 @@ namespace meal.input
 
         private void OnResetGridLayoutGroup()
         {
-            GridLayoutHelper.ClearGridLayoutGroup(gridLayout);
+            GridLayoutHelper.ClearLayoutGroup(gridLayout);
             nextButton.gameObject.SetActive(false);
             _mealItems.Clear();
         }
@@ -42,7 +42,7 @@ namespace meal.input
         {
             _mealItems = new HashSet<string>();
 
-            GridLayoutHelper.ClearGridLayoutGroup(gridLayout);
+            GridLayoutHelper.ClearLayoutGroup(gridLayout);
             //Adds a listener to the main input field and invokes a method when the value changes.
             mealItemInput.onValueChanged.AddListener(ValueChange);
         }

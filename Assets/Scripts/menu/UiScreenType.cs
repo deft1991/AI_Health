@@ -20,4 +20,9 @@ public enum UiScreenType : byte
     MealItems = 16,
     MealRecommendation = 17,
     
+    HistoryNutritionProgramScreen = 18,
+    
+    SaveNutritionProgramScreen = 19,
+    NutritionProgramHistoryItemDetailedScreen = 20,
+    
 }

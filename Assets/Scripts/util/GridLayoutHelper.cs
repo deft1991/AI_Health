@@ -6,7 +6,7 @@ namespace playerChangeValue.util
     public class GridLayoutHelper
     {
 
-        public static void ClearGridLayoutGroup(GridLayoutGroup gridLayout)
+        public static void ClearLayoutGroup(LayoutGroup gridLayout)
         {
             for (int i = 0; i < gridLayout.transform.childCount; i++)
             {
