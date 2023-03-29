@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using data;
 using global;
 using nutritionProgram.history.data;
@@ -38,7 +37,7 @@ namespace nutritionProgram.history.controller
         {
             GridLayoutHelper.ClearLayoutGroup(layout);
             NutritionProgramHistoryListDto historyListDto = Managers.NutritionProgramHistoryManager.HistoryListDto;
-
+            
             /*
              * Create history lines.  
              */

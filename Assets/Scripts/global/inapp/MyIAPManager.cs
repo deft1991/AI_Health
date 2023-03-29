@@ -139,6 +139,7 @@ namespace global.inapp
         public void BuyNoAds()
         {
             BuyProductID(TEST_SUB);
+            ListPurchases();
         }
 
         public void CompletePurchase()

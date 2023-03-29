@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353216450328",
+    "project_id": "ai-health-bfc83",
+    "storage_bucket": "ai-health-bfc83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353216450328:android:aa38c559529f35b411586d",
+        "android_client_info": {
+          "package_name": "com.deft.aihealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353216450328-7nagt5n4f60k756a8v42m8glt59oc5rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEPn1B8pZudSG-uZ2e_tdmd3yz9xy1G_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353216450328-7nagt5n4f60k756a8v42m8glt59oc5rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
