@@ -6,6 +6,7 @@ using nutritionProgram.history.@event;
 using playerChangeValue.util;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace nutritionProgram.history.controller
 {
@@ -47,7 +48,7 @@ namespace nutritionProgram.history.controller
                 HistoryItem historyItem = historyLine.GetComponent<HistoryItem>();
                 historyItem.SetHistoryValues(
                     dto.programName,
-                    Enum.GetName(typeof(NutritionProgramGoal), dto.Goal),
+                    PlayerIfoDto.GetGoalString(dto.Goal),
                     dto.generateTime.ToString());
             }
         }

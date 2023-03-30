@@ -1,5 +1,5 @@
 using System;
-using data;
+using global;
 using Newtonsoft.Json;
 using nutritionProgram.history.data;
 using nutritionProgram.history.@event;
@@ -31,6 +31,11 @@ namespace nutritionProgram.service
             Debug.Log("NutritionProgramHistoryManager: started");
         }
 
+        private void OnDestroy()
+        {
+            Messenger<string, string>.RemoveListener(NutritionProgramHistoryEvent.SAVE_HISTORY, OnSaveHistory);
+        }
+
         private void OnSaveHistory(string programName, string nutritionProgram)
         {
             string history = PlayerPrefs.GetString(NUTRITION_PROGRAM_RECOMMENDATION_HISTORY);
@@ -44,7 +49,7 @@ namespace nutritionProgram.service
             {
                 programName = programName,
                 nutritionProgram = nutritionProgram,
-                Goal = NutritionProgramGoal.DRY,
+                Goal = Managers.PlayerInfoManager.Player.goal,
                 generateTime = DateTime.Now
             };
             

@@ -1,3 +1,5 @@
+using global;
+using global.inapp;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -55,8 +57,13 @@ namespace advert
         // Implement Load Listener and Show Listener interface methods:  
         public void OnUnityAdsAdLoaded(string adUnitId)
         {
-            // Optionally execute code if the Ad Unit successfully loads content.
-            Advertisement.Show(_adUnitId, this);
+            // todo remove it from here
+            bool hasGoogleSubscription = Managers.MyIAPManager.hasGoogleSubscription(MyIAPManager.TEST_SUB);
+            if (!hasGoogleSubscription)
+            {
+                // Optionally execute code if the Ad Unit successfully loads content.
+                Advertisement.Show(_adUnitId, this);
+            }
         }
 
         public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)

@@ -43,7 +43,7 @@ namespace global.manager
             string requestMessageTemplate =
                 "generate nutrition program for {0} for: {1} age, {2}, {3} sm height, {4} kg weight";
 
-            var goal = GetGoalString(playerIfoDto);
+            var goal = PlayerIfoDto.GetGoalString(playerIfoDto);
 
             string requestMessage = String.Format(requestMessageTemplate,
                 goal,
@@ -103,7 +103,7 @@ namespace global.manager
                 "For {3}. " +
                 "For {4} years old {5} with {6} cm length and {7} kg weight.";
 
-            var goal = GetGoalString(playerIfoDto);
+            var goal = PlayerIfoDto.GetGoalString(playerIfoDto);
 
             string requestMessage = String.Format(requestMessageTemplate,
                 muscleGroups,
@@ -135,7 +135,7 @@ namespace global.manager
                 "For {2}. " +
                 "For {3} years old {4} with {6} cm length and {6} kg weight.";
 
-            var goal = GetGoalString(playerIfoDto);
+            var goal = PlayerIfoDto.GetGoalString(playerIfoDto);
 
             string requestMessage = String.Format(requestMessageTemplate,
                 mealOfTheDay,
@@ -147,25 +147,6 @@ namespace global.manager
                 playerIfoDto.weight.ToString());
 
             StartCoroutine(ChatGPTClient.Instance.Ask(requestMessage, (r) => MealRecommendationProcessResponse(r)));
-        }
-
-        private static string GetGoalString(PlayerIfoDto playerIfoDto)
-        {
-            string goal = "";
-            switch (playerIfoDto.goal)
-            {
-                case NutritionProgramGoal.DRY:
-                    goal = "reduce fat";
-                    break;
-                case NutritionProgramGoal.SAME:
-                    goal = "maintain muscle mass";
-                    break;
-                case NutritionProgramGoal.INCREASE:
-                    goal = "increase muscles";
-                    break;
-            }
-
-            return goal;
         }
 
         private void WorkoutProgramProcessResponse(MyCreateChatCompletionResponse response)

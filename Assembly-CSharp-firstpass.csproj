@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <None Include="Assets/Plugins/Android/proguard-android.txt" />
      <Folder Include="Assets/Plugins/Android" />
      <Folder Include="Assets/Plugins" />
      <Reference Include="UnityEngine">

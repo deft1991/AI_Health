@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace playerChangeValue
+namespace service.profile
 {
     public class ProfileViewService : MonoBehaviour
     {
@@ -29,10 +29,19 @@ namespace playerChangeValue
             Messenger<string>.AddListener(ProfileChangeEvent.CHANGE_HEIGHT, OnChangeHeight);
             Messenger<GenderType>.AddListener(ProfileChangeEvent.CHANGE_GENDER, OnChangeGender);
             Messenger<NutritionProgramGoal>.AddListener(ProfileChangeEvent.CHANGE_GOAL, OnChangeGoal);
+            
+            gender.onValueChanged.AddListener(delegate {
+                OnGenderDropdownValueChanged(gender);
+            });           
+            
+            goal.onValueChanged.AddListener(delegate {
+                OnGoalDropdownValueChanged(goal);
+            });
+
 
             FillCurrentProfile();
         }
-        
+
         private void OnDestroy()
         {
             Messenger<string>.RemoveListener(ProfileChangeEvent.CHANGE_NAME, OnChangeName);
@@ -59,14 +68,12 @@ namespace playerChangeValue
 
         private void OnChangeGender(GenderType genderVal)
         {
-            SetGender(genderVal);
             Managers.PlayerInfoManager.Player.gender = genderVal;
             Managers.PlayerInfoManager.SavePlayer();
         }
         
         private void OnChangeGoal(NutritionProgramGoal goalVal)
         {
-            SetGoal(goalVal);
             Managers.PlayerInfoManager.Player.goal = goalVal;
             Managers.PlayerInfoManager.SavePlayer();
         }
@@ -127,6 +134,23 @@ namespace playerChangeValue
             height.text = val;
             Managers.PlayerInfoManager.Player.height = Convert.ToInt32(val);
             Managers.PlayerInfoManager.SavePlayer();
+        }
+        
+        private void OnGenderDropdownValueChanged(Dropdown change)
+        {
+            GenderType genderType;
+            int changeValue = change.value;
+            int realValue = changeValue + 1; // add default value
+            Enum.TryParse(realValue.ToString(), out genderType);
+            OnChangeGender(genderType);
+        }       
+        private void OnGoalDropdownValueChanged(Dropdown change)
+        {
+            NutritionProgramGoal goalType;
+            int changeValue = change.value;
+            int realValue = changeValue + 1; // add default value
+            Enum.TryParse(realValue.ToString(), out goalType);
+            OnChangeGoal(goalType);
         }
     }
 }

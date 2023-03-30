@@ -118,6 +118,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets/Scripts/data/enums/GenderType.cs" />
+     <Compile Include="Assets/Scripts/util/ApplicationVersion.cs" />
      <Compile Include="Assets/Scripts/util/ZzzLog.cs" />
      <Compile Include="Assets/Scripts/data/MuscleGroupToggle.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
