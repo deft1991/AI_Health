@@ -6491,7 +6491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your nutrition program is preparing...
+  m_text: "Your workout\n program is preparing..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -34282,6 +34282,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 284255080}
     m_Modifications:
+    - target: {fileID: 3533262420131836335, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
+      propertyPath: m_text
+      value: BREAD
+      objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -34300,7 +34304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_AnchorMin.x
@@ -34308,15 +34312,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4673457286034398833, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34369,6 +34373,10 @@ PrefabInstance:
     - target: {fileID: 6180505673779283575, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_Name
       value: MealItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180505673779283575, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8674658735365185257, guid: 84fc2e89214eb4db69b0130f680605cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
