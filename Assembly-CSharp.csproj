@@ -212,6 +212,7 @@
      <Folder Include="Assets/Scripts/meal" />
      <Folder Include="Assets/Scripts/iap/event" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/health_bar_rounded 1" />
+     <Folder Include="Assets/Graphics/logo" />
      <Folder Include="Assets/Samples/OpenAI Unity/0.1.9/ChatGPT" />
      <Folder Include="Assets/Scripts/global" />
      <Folder Include="Assets/SimplePixelUI/fonts/Font1" />
