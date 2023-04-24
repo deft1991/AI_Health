@@ -1,19 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Android.AppBundle.Editor", "Google.Android.AppBundle.Editor.csproj", "{4ee44128-d8e1-dc45-0d5c-86c062be12a7}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0ef5b98b-1a3b-656d-b8f2-e74202533c24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Common", "Google.Play.Common.csproj", "{1614d5f8-6ca8-8a86-24c1-10fa283e98ec}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Core", "Google.Play.Core.csproj", "{73031ced-8dae-e19e-5684-fb5749d07749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Review", "Google.Play.Review.csproj", "{62f694eb-6393-f8a8-29d5-73d3c9edca52}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{61569b1f-fe85-ad47-230f-3fba90d26f1a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{a5455486-b253-8f0c-d347-3b0e8079eb13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ee44128-d8e1-dc45-0d5c-86c062be12a7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ee44128-d8e1-dc45-0d5c-86c062be12a7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ef5b98b-1a3b-656d-b8f2-e74202533c24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0ef5b98b-1a3b-656d-b8f2-e74202533c24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1614d5f8-6ca8-8a86-24c1-10fa283e98ec}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1614d5f8-6ca8-8a86-24c1-10fa283e98ec}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73031ced-8dae-e19e-5684-fb5749d07749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73031ced-8dae-e19e-5684-fb5749d07749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62f694eb-6393-f8a8-29d5-73d3c9edca52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62f694eb-6393-f8a8-29d5-73d3c9edca52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61569b1f-fe85-ad47-230f-3fba90d26f1a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61569b1f-fe85-ad47-230f-3fba90d26f1a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a5455486-b253-8f0c-d347-3b0e8079eb13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a5455486-b253-8f0c-d347-3b0e8079eb13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

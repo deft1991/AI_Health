@@ -167,6 +167,7 @@
      <Folder Include="Assets/Scripts/iap" />
      <Folder Include="Assets/Scripts/chatGPT/data" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets/GooglePlayPlugins/com.google.play.common/package.json" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
      <Folder Include="Assets/Settings" />
      <Folder Include="Assets/Samples/OpenAI Unity" />
@@ -175,6 +176,7 @@
      <Folder Include="Assets/SimplePixelUI/update 1.15" />
      <Folder Include="Assets/Scripts/service/profile" />
      <Folder Include="Assets/Scripts/pushNotification" />
+     <Folder Include="Assets/Graphics/logo/Adaptive/Background" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/rounded" />
      <Folder Include="Assets/Prefab/history" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray" />
@@ -187,9 +189,11 @@
      <Folder Include="Assets/Scripts/meal/event" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/license.txt" />
+     <Folder Include="Assets/Graphics/startupScreen" />
      <Folder Include="Assets/Samples/In App Purchasing" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/controller" />
      <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
+     <Folder Include="Assets/Graphics/Buttons_2/Bottom_bar" />
      <Folder Include="Assets/Scripts/service" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal" />
      <Folder Include="Assets/Scenes" />
@@ -204,6 +208,7 @@
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square" />
      <Folder Include="Assets/Scripts/meal/data" />
      <Folder Include="Assets/Prefab" />
+     <Folder Include="Assets/Graphics/Buttons_2/Top_bar" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray/rounded/buttons" />
      <Folder Include="Assets/TextMesh Pro/Resources" />
@@ -216,6 +221,7 @@
      <Folder Include="Assets/Samples/OpenAI Unity/0.1.9/ChatGPT" />
      <Folder Include="Assets/Scripts/global" />
      <Folder Include="Assets/SimplePixelUI/fonts/Font1" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.play.review" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/event" />
      <Folder Include="Assets/Scripts/nutritionProgram" />
      <Folder Include="Assets/Samples" />
@@ -238,6 +244,7 @@
      <Folder Include="Assets/Scripts/nutritionProgram/history/data" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.play.core/Proguard" />
      <Folder Include="Assets/Scripts/UnityPurchasing/generated" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/manager" />
      <Folder Include="Assets/Scripts/global/manager" />
@@ -252,6 +259,7 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Materials" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray/square/Buttons" />
+     <Folder Include="Assets/GooglePlayPlugins" />
      <Folder Include="Assets/Resources" />
      <Folder Include="Assets/Graphics/icon" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
@@ -263,6 +271,7 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical" />
      <Folder Include="Assets/SimplePixelUI/prefabs" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.play.core" />
      <None Include="Assets/Resources/IAPProductCatalog.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <Folder Include="Assets/TextMesh Pro/Shaders" />
@@ -271,12 +280,16 @@
      <Folder Include="Assets/Graphics" />
      <Folder Include="Assets/Scripts/workout/data" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets" />
+     <Folder Include="Assets/ExternalDependencyManager" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
      <Folder Include="Assets/Scripts/nutritionProgram/history" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.play.review/Proguard" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/buttons" />
+     <Folder Include="Assets/Graphics/logo/Adaptive" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/GooglePlayPlugins/com.google.play.review/Proguard/review.txt" />
      <Folder Include="Assets/Samples/In App Purchasing/4.7.0/02 Buying Subscription" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black" />
@@ -284,27 +297,33 @@
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Prefabs" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons" />
      <Folder Include="Assets/StreamingAssets" />
+     <None Include="Assets/GooglePlayPlugins/com.google.play.core/package.json" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded" />
      <Folder Include="Assets/Scripts/advert/event" />
      <Folder Include="Assets/Scripts/data/enums" />
+     <None Include="Assets/GooglePlayPlugins/com.google.play.core/Proguard/common.txt" />
      <None Include="Assets/SimplePixelUI/fonts/Font1/readme.txt" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.play.common" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Scripts/chatGPT" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/service" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/square" />
      <Folder Include="Assets/Scripts/systemEvents" />
+     <Folder Include="Assets/Graphics/Buttons_2" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/readme.txt" />
      <Folder Include="Assets/Scripts/meal/input" />
      <Folder Include="Assets/Scripts/advert/service" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <Folder Include="Assets/Scripts/meal/controller" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets/GooglePlayPlugins/com.google.android.appbundle" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Textures" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/toogle" />
+     <Folder Include="Assets/Graphics/logo/Adaptive/Foreground" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/slider3" />
      <Folder Include="Assets/Scripts/global/inapp" />
      <Folder Include="Assets/TextMesh Pro/Documentation" />
@@ -313,7 +332,9 @@
      <Folder Include="Assets/Scripts/meal/service" />
      <None Include="Assets/google-services.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/GooglePlayPlugins/com.google.android.appbundle/package.json" />
      <Folder Include="Assets/Samples/OpenAI Unity/0.1.9" />
+     <None Include="Assets/GooglePlayPlugins/com.google.play.review/package.json" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded" />
@@ -1144,6 +1165,22 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Google.Play.Core.csproj">
+      <Project>{73031ced-8dae-e19e-5684-fb5749d07749}</Project>
+      <Name>Google.Play.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Play.Common.csproj">
+      <Project>{1614d5f8-6ca8-8a86-24c1-10fa283e98ec}</Project>
+      <Name>Google.Play.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Play.Review.csproj">
+      <Project>{62f694eb-6393-f8a8-29d5-73d3c9edca52}</Project>
+      <Name>Google.Play.Review</Name>
+    </ProjectReference>
+    <ProjectReference Include="Google.Android.AppBundle.Editor.csproj">
+      <Project>{4ee44128-d8e1-dc45-0d5c-86c062be12a7}</Project>
+      <Name>Google.Android.AppBundle.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
