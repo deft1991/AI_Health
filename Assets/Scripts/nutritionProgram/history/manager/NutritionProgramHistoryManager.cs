@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace nutritionProgram.service
 {
-    public class NutritionProgramHistoryManager : MonoBehaviour, IGameManager
+    public class    NutritionProgramHistoryManager : MonoBehaviour, IGameManager
     {
         
         public static string NUTRITION_PROGRAM_RECOMMENDATION_HISTORY = "NUTRITION_PROGRAM_RECOMMENDATION_HISTORY";

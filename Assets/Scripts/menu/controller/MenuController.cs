@@ -1,3 +1,4 @@
+using System;
 using advert.@event;
 using data;
 using global;
@@ -84,7 +85,7 @@ public class MenuController : MonoBehaviour
     {
         PlayerIfoDto player = Managers.PlayerInfoManager.Player;
 
-        if (player.name == null)
+        if (String.IsNullOrEmpty(player.name) )
         {
             OpenName();
         }

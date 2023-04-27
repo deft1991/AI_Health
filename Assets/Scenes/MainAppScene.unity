@@ -5882,7 +5882,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385907420}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -5971,8 +5971,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7487,7 +7487,7 @@ GameObject:
   - component: {fileID: 551023493}
   - component: {fileID: 551023492}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GenderNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7800,7 +7800,7 @@ GameObject:
   - component: {fileID: 560516554}
   - component: {fileID: 560516553}
   m_Layer: 5
-  m_Name: Button
+  m_Name: HeightNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8147,7 +8147,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8778,7 +8778,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -12983,7 +12983,7 @@ GameObject:
   - component: {fileID: 927765181}
   - component: {fileID: 927765180}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ResultNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14872,7 +14872,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -18308,7 +18308,7 @@ GameObject:
   - component: {fileID: 1242700055}
   - component: {fileID: 1242700054}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GoalNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18944,7 +18944,7 @@ GameObject:
   - component: {fileID: 1286767935}
   - component: {fileID: 1286767934}
   m_Layer: 5
-  m_Name: Button
+  m_Name: WeightNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20657,7 +20657,7 @@ GameObject:
   - component: {fileID: 1407713050}
   - component: {fileID: 1407713049}
   m_Layer: 5
-  m_Name: Button
+  m_Name: AgeNextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25369,7 +25369,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716992619}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -32544,13 +32544,17 @@ PrefabInstance:
     - target: {fileID: 2876687187173578396, guid: 753d20faeaec24e5dabe2e9b7d8853aa, type: 3}
       propertyPath: goalNextButton
       value: 
-      objectReference: {fileID: 560516553}
+      objectReference: {fileID: 1242700054}
     - target: {fileID: 2876687187173578396, guid: 753d20faeaec24e5dabe2e9b7d8853aa, type: 3}
       propertyPath: genderNextButton
       value: 
       objectReference: {fileID: 551023492}
     - target: {fileID: 2876687187173578396, guid: 753d20faeaec24e5dabe2e9b7d8853aa, type: 3}
       propertyPath: heightNextButton
+      value: 
+      objectReference: {fileID: 560516553}
+    - target: {fileID: 2876687187173578396, guid: 753d20faeaec24e5dabe2e9b7d8853aa, type: 3}
+      propertyPath: weightNextButton
       value: 
       objectReference: {fileID: 1286767934}
     - target: {fileID: 4271990369594596905, guid: 753d20faeaec24e5dabe2e9b7d8853aa, type: 3}

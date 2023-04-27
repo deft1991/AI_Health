@@ -1,18 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996f80b1a06b41f7b8d27313b3ab25c5, type: 3}
-  m_Name: ChatGPTSettings
-  m_EditorClassIdentifier: 
-  apiURL: https://api.openai.com/v1/chat/completions
-  apiKey: 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
-  debug: 0
-  reminders: []
+version https://git-lfs.github.com/spec/v1
+oid sha256:5622aec3d45b1a1809ecc9acb33048c68598f0636a4ff08eb2f7243170179bf5
+size 546

@@ -16,7 +16,7 @@ namespace global.manager
     public class ChatGptManager : MonoBehaviour, IGameManager
     {
         public ManagerStatus Status { get; private set; }
-        private OpenAIApi openai = new OpenAIApi("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");
+        private OpenAIApi openai = new OpenAIApi("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");
 
         public void Startup()
         {
