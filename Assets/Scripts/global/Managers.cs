@@ -26,6 +26,7 @@ namespace global
     [RequireComponent(typeof(MyIAPManager))]
     [RequireComponent(typeof(NutritionProgramHistoryManager))]
     [RequireComponent(typeof(PushNotificationManager))]
+    [RequireComponent(typeof(GoogleReviewManager))]
     public class Managers : MonoBehaviour
     {
     
@@ -42,6 +43,7 @@ namespace global
         public static MyIAPManager MyIAPManager { get; private set; }
         public static NutritionProgramHistoryManager NutritionProgramHistoryManager { get; private set; }
         public static PushNotificationManager PushNotificationManager { get; private set; }
+        public static GoogleReviewManager GoogleReviewManager { get; private set; }
 
         /*
      * List of all IGameManagers
@@ -69,6 +71,7 @@ namespace global
             MyIAPManager = GetComponent<MyIAPManager>();
             NutritionProgramHistoryManager = GetComponent<NutritionProgramHistoryManager>();
             PushNotificationManager = GetComponent<PushNotificationManager>();
+            GoogleReviewManager = GetComponent<GoogleReviewManager>();
 
             _startSequence = new List<IGameManager>();
             _startSequence.Add(AdsInitializerManager);
@@ -81,6 +84,7 @@ namespace global
             _startSequence.Add(MyIAPManager);
             _startSequence.Add(NutritionProgramHistoryManager);
             _startSequence.Add(PushNotificationManager);
+            _startSequence.Add(GoogleReviewManager);
             
             // _startSequence.Add(BannerAdExample);
             // _startSequence.Add(InterstitialAdExample);

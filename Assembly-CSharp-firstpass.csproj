@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <None Include="Assets/Plugins/Android/proguard-android.txt" />
      <Folder Include="Assets/Plugins/Android" />
+     <None Include="Assets/Plugins/Android/proguard-user.txt" />
      <Folder Include="Assets/Plugins" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b9/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

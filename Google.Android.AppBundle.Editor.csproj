@@ -45,7 +45,6 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2023.1.0b9/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Utils/RegexHelper.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/BuildTools/IBuildTool.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Config/SerializableMultiTargetingAssetPack.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/BuildSettingsWindow.cs" />
@@ -87,8 +86,8 @@
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/PlayServices/CommandLine.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/AndroidManifest/IAssetPackManifestTransformer.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/AssetPacks/AssetDeliveryWindow.cs" />
-     <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/BuildTools/AndroidSdkPlatform.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Utils/NameAndDescriptionAttribute.cs" />
+     <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/BuildTools/AndroidSdkPlatform.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Config/SerializableAssetBundle.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/AndroidBuildOptions.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/PlayServices/CommandLineDialog.cs" />
@@ -129,6 +128,7 @@
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/BundletoolBuildMode.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Registry.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/PlayServices/Logger.cs" />
+     <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Utils/RegexHelper.cs" />
      <Compile Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/TextureCompressionFormat.cs" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.android.appbundle/Editor/Scripts/Internal/Utils" />
@@ -435,6 +435,12 @@
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Google.PackageManagerResolver">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandler">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
@@ -447,29 +453,23 @@
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Google.IOSResolver">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll</HintPath>
+     </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.1.0/Runtime/Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
+     <Reference Include="Google.VersionHandlerImpl">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll</HintPath>
+     </Reference>
      <Reference Include="unityplastic">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/PackageCache/com.unity.collab-proxy@2.0.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
-     <Reference Include="Google.VersionHandler">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
-     </Reference>
-     <Reference Include="Google.PackageManagerResolver">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.172/Google.PackageManagerResolver.dll</HintPath>
-     </Reference>
      <Reference Include="Google.JarResolver">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.172/Google.JarResolver.dll</HintPath>
-     </Reference>
-     <Reference Include="Google.VersionHandlerImpl">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.172/Google.VersionHandlerImpl.dll</HintPath>
-     </Reference>
-     <Reference Include="Google.IOSResolver">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.172/Google.IOSResolver.dll</HintPath>
+     <HintPath>/Users/deft/UnityProjects/AI Health/Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b9/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

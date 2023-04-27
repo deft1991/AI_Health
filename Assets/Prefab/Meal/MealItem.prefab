@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Food
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
-  m_sharedMaterial: {fileID: 811773398191683472, guid: 33293e8b8ae824f7280affdac8893e28, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 851ac1002fcb3470692bc31ea77097d6, type: 2}
+  m_sharedMaterial: {fileID: -6571008281238326413, guid: 851ac1002fcb3470692bc31ea77097d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94fc7c772ff3e3e4e82e2104009827fe, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -784900577, guid: 233ed7adf490d472d9e6487640c4f9e2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -338,8 +338,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94fc7c772ff3e3e4e82e2104009827fe, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 948492860, guid: b30061d409b694f28a034dec0487158a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

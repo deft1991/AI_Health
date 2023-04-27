@@ -49,51 +49,36 @@
      <Compile Include="Assets/Scripts/systemEvents/ScreenChangeEvent.cs" />
      <Compile Include="Assets/Scripts/systemEvents/StartupEvent.cs" />
      <Compile Include="Assets/Scripts/advert/AdsInitializerManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/Scripts/advert/RewardedAdsButton.cs" />
      <Compile Include="Assets/Scripts/data/PlayerIfoDto.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/manager/NutritionProgramHistoryManager.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTClient.cs" />
      <Compile Include="Assets/Scripts/global/manager/FillDataManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerInputController.cs" />
      <Compile Include="Assets/Samples/In App Purchasing/4.7.0/02 Buying Subscription/BuyingSubscription.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGender.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTTester.cs" />
      <Compile Include="Assets/Scripts/data/enums/MuscleGroupType.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/ProfileInputController.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/Scripts/global/manager/MealInfoManager.cs" />
      <Compile Include="Assets/Scripts/iap/event/IapEvent.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/controller/ViewItemNutritionProgramHistoryController.cs" />
      <Compile Include="Assets/Scripts/service/profile/ProfileViewService.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
      <Compile Include="Assets/Scripts/data/NutritionProgramGoal.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/controller/ViewAllSavedNutritionProgramHistoryController.cs" />
      <Compile Include="Assets/Scripts/global/StartupController.cs" />
      <Compile Include="Assets/Scripts/advert/InterstitialAdExample.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
      <Compile Include="Assets/Scripts/global/manager/ShowAdManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
      <Compile Include="Assets/Samples/OpenAI Unity/0.1.9/ChatGPT/ChatGPT.cs" />
      <Compile Include="Assets/Scripts/meal/input/MealOfTheDayInputHandler.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/controller/DeleteNutritionProgramHistoryController.cs" />
      <Compile Include="Assets/Scripts/meal/event/MealEvent.cs" />
      <Compile Include="Assets/Scripts/util/Singleton.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
      <Compile Include="Assets/Scripts/advert/BannerAdStarter.cs" />
      <Compile Include="Assets/Scripts/pushNotification/manager/PushNotificationManager.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/controller/SaveNutritionProgramController.cs" />
      <Compile Include="Assets/Scripts/ManagerStatus.cs" />
      <Compile Include="Assets/Scripts/workout/input/WorkoutDurationInputHandler.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/ChatGPTRequest.cs" />
      <Compile Include="Assets/Scripts/chatGPT/ChatGPTSettings.cs" />
      <Compile Include="Assets/Scripts/data/ChatGPTSecurityDto.cs" />
@@ -104,24 +89,16 @@
      <Compile Include="Assets/Scripts/util/Logger.cs" />
      <Compile Include="Assets/Scripts/systemEvents/ProfileChangeEvent.cs" />
      <Compile Include="Assets/Scripts/global/inapp/MyIAPManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/PlayerNutritionProgramRecommendationController.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/event/NutritionProgramHistoryEvent.cs" />
      <Compile Include="Assets/Scripts/meal/input/DishInputHandler.cs" />
      <Compile Include="Assets/Scripts/global/manager/ChatGPTSecurityManager.cs" />
      <Compile Include="Assets/Scripts/meal/data/MealOfTheDayType.cs" />
      <Compile Include="Assets/Scripts/workout/data/WorkoutDifficultyLevelType.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets/Scripts/data/enums/GenderType.cs" />
      <Compile Include="Assets/Scripts/util/ApplicationVersion.cs" />
      <Compile Include="Assets/Scripts/util/ZzzLog.cs" />
      <Compile Include="Assets/Scripts/data/MuscleGroupToggle.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
      <Compile Include="Assets/Scripts/meal/data/MealItem.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/data/HistoryItem.cs" />
      <Compile Include="Assets/Scripts/global/manager/ChatGPTManager.cs" />
@@ -129,25 +106,16 @@
      <Compile Include="Assets/Scripts/Utility.cs" />
      <Compile Include="Assets/Scripts/workout/PlayerWorkoutRecommendationController.cs" />
      <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/Scripts/advert/service/SubscribeService.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets/Scripts/global/manager/GoogleReviewManager.cs" />
      <Compile Include="Assets/Scripts/global/manager/StuckManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/ChatGPTResponse.cs" />
      <Compile Include="Assets/Scripts/meal/input/MealInputHandler.cs" />
      <Compile Include="Assets/Scripts/meal/controller/MealRecommendationController.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
      <Compile Include="Assets/Scripts/IGameManager.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
      <Compile Include="Assets/Scripts/advert/BannerAdExample.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
      <Compile Include="Assets/Scripts/menu/UiScreenType.cs" />
      <Compile Include="Assets/Scripts/systemEvents/RecommendationEvent.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/Scripts/workout/input/WorkoutMuscleGroupInputHandler.cs" />
      <Compile Include="Assets/Scripts/playerChangeValue/PlayerChooseGoal.cs" />
      <Compile Include="Assets/Scripts/nutritionProgram/history/data/NutritionProgramHistoryListDto.cs" />
@@ -155,14 +123,13 @@
      <Compile Include="Assets/Scripts/Messenger.cs" />
      <Compile Include="Assets/Scripts/chatGPT/data/DataTypes.cs" />
      <Compile Include="Assets/Scripts/workout/input/WorkoutDifficultyLevelInputHandler.cs" />
-     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets/Scripts/advert/service/GoogleReviewService.cs" />
      <Compile Include="Assets/Scripts/global/manager/PlayerInfoManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library/BuildInstructions" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/square" />
      <Folder Include="Assets/Scripts/playerChangeValue" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded" />
      <Folder Include="Assets/Scripts/iap" />
      <Folder Include="Assets/Scripts/chatGPT/data" />
@@ -170,6 +137,8 @@
      <None Include="Assets/GooglePlayPlugins/com.google.play.common/package.json" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
      <Folder Include="Assets/Settings" />
+     <Folder Include="Assets/Graphics/top" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
      <Folder Include="Assets/Samples/OpenAI Unity" />
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/Slider 2" />
@@ -192,7 +161,6 @@
      <Folder Include="Assets/Graphics/startupScreen" />
      <Folder Include="Assets/Samples/In App Purchasing" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/controller" />
-     <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
      <Folder Include="Assets/Graphics/Buttons_2/Bottom_bar" />
      <Folder Include="Assets/Scripts/service" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_horizontal" />
@@ -201,7 +169,6 @@
      <None Include="Assets/StreamingAssets/google-services-desktop.json" />
      <Folder Include="Assets/Font/arcadeclassic" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/rounded/buttons" />
-     <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" />
      <Folder Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/Buttons" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
@@ -240,10 +207,10 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible" />
      <Folder Include="Assets/Scripts/workout/controller" />
      <Folder Include="Assets/Font" />
+     <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
      <Folder Include="Assets/Scripts/workout/input" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/data" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources" />
+     <Folder Include="Assets/Font/poppins" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.play.core/Proguard" />
      <Folder Include="Assets/Scripts/UnityPurchasing/generated" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/manager" />
@@ -256,17 +223,16 @@
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded/buttons" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/Slider2" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Materials" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
      <Folder Include="Assets/SimplePixelUI/artwork/gray/square/Buttons" />
      <Folder Include="Assets/GooglePlayPlugins" />
      <Folder Include="Assets/Resources" />
      <Folder Include="Assets/Graphics/icon" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+     <Folder Include="Assets/Graphics/main screen" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <Folder Include="Assets/SimplePixelUI/fonts/Font2" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts" />
      <Folder Include="Assets/Scripts/workout" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square/scroll_vertical" />
@@ -279,10 +245,10 @@
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/Slider3" />
      <Folder Include="Assets/Graphics" />
      <Folder Include="Assets/Scripts/workout/data" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Sprite Assets" />
      <Folder Include="Assets/ExternalDependencyManager" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
      <Folder Include="Assets/Scripts/nutritionProgram/history" />
+     <Folder Include="Assets/Graphics/bottom" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.play.review/Proguard" />
@@ -294,11 +260,9 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/rounded/health_bar_rounded" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/Slider" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Prefabs" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/rounded/buttons" />
      <Folder Include="Assets/StreamingAssets" />
      <None Include="Assets/GooglePlayPlugins/com.google.play.core/package.json" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Scenes" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/rounded/buttons" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/rounded" />
      <Folder Include="Assets/Scripts/advert/event" />
@@ -310,6 +274,7 @@
      <Folder Include="Assets/Scripts/chatGPT" />
      <Folder Include="Assets/Scripts/nutritionProgram/history/service" />
      <Folder Include="Assets/SimplePixelUI/prefabs/color_customizible/square" />
+     <None Include="Assets/Font/poppins/SIL Open Font License.txt" />
      <Folder Include="Assets/Scripts/systemEvents" />
      <Folder Include="Assets/Graphics/Buttons_2" />
      <None Include="Assets/SimplePixelUI/fonts/Font2/readme.txt" />
@@ -320,7 +285,6 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.android.appbundle" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Textures" />
      <Folder Include="Assets/SimplePixelUI/artwork/colorCustomizible/square" />
      <Folder Include="Assets/SimplePixelUI/artwork/halfcustomizible/square/toogle" />
      <Folder Include="Assets/Graphics/logo/Adaptive/Foreground" />
@@ -328,15 +292,12 @@
      <Folder Include="Assets/Scripts/global/inapp" />
      <Folder Include="Assets/TextMesh Pro/Documentation" />
      <Folder Include="Assets/Scripts/util" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras" />
      <Folder Include="Assets/Scripts/meal/service" />
      <None Include="Assets/google-services.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <None Include="Assets/GooglePlayPlugins/com.google.android.appbundle/package.json" />
      <Folder Include="Assets/Samples/OpenAI Unity/0.1.9" />
      <None Include="Assets/GooglePlayPlugins/com.google.play.review/package.json" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials" />
-     <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Resources/Color Gradient Presets" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/rounded" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
      <Folder Include="Assets/Scripts/advert" />
@@ -344,7 +305,6 @@
      <Folder Include="Assets/SimplePixelUI/prefabs/Half_color_customizible/square/ScrollBar" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <Folder Include="Assets/SimplePixelUI/prefabs/Gray_black/square/buttons" />
-     <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
      <Folder Include="Assets/Scripts/data" />
      <Folder Include="Assets/Scripts" />
      <Reference Include="UnityEngine">
@@ -1121,11 +1081,11 @@
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Mathematics">
-     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Users/deft/UnityProjects/AI Health/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>

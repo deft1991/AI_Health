@@ -41,13 +41,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <None Include="Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.172_manifest.txt" />
      <Folder Include="Assets/ExternalDependencyManager/Editor" />
      <None Include="Assets/GooglePlayPlugins/com.google.play.core/Editor/Dependencies.xml" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.play.review/Editor" />
      <None Include="Assets/GooglePlayPlugins/com.google.play.review/Editor/Dependencies.xml" />
+     <Folder Include="Assets/ExternalDependencyManager/Editor/1.2.175" />
+     <None Include="Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.175_manifest.txt" />
      <Folder Include="Assets/GooglePlayPlugins/com.google.play.core/Editor" />
-     <Folder Include="Assets/ExternalDependencyManager/Editor/1.2.172" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.0b9/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
