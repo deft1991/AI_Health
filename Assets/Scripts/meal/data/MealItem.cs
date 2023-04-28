@@ -23,7 +23,10 @@ namespace data
 
         public void OnClickDelete()
         {
+            var item = value.text;
+            Debug.Log("MealItem OnClickDelete: " + item);
             Destroy(this.gameObject);
+            Messenger<string>.Broadcast(MealEvent.DELETE_ITEM, item);
         }
     }
 }

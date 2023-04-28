@@ -1,64 +1,72 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using global;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ProfileInputController : MonoBehaviour
+namespace playerChangeValue
 {
-    // Start is called before the first frame update
-
-    [SerializeField] private TMP_InputField nameInput;
-    [SerializeField] private TMP_InputField ageInput;
-    [SerializeField] private TMP_InputField weightInput;
-    [SerializeField] private TMP_InputField heightInput;
-
-    void Start()
+    public class ProfileInputController : MonoBehaviour
     {
-        //Adds a listener to the main input field and invokes a method when the value changes.
-        nameInput.onValueChanged.AddListener(NameChangeCheck);
-        ageInput.onValueChanged.AddListener(AgeChangeCheck);
-        weightInput.onValueChanged.AddListener(WeightChangeCheck);
-        heightInput.onValueChanged.AddListener(HeightChangeCheck);
-    }
+        // Start is called before the first frame update
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+        [SerializeField] private TMP_InputField nameInput;
+        [SerializeField] private TMP_InputField ageInput;
+        [SerializeField] private TMP_InputField weightInput;
+        [SerializeField] private TMP_InputField heightInput;
 
-    // Invoked when the value of the text field changes.
-    public void NameChangeCheck(string val)
-    {
-        Debug.Log("Name Changed: " + val);
-        Managers.PlayerInfoManager.Player.name = val;
+        void Start()
+        {
+            //Adds a listener to the main input field and invokes a method when the value changes.
+            nameInput.onValueChanged.AddListener(NameChangeCheck);
+            ageInput.onValueChanged.AddListener(AgeChangeCheck);
+            weightInput.onValueChanged.AddListener(WeightChangeCheck);
+            heightInput.onValueChanged.AddListener(HeightChangeCheck);
+        }
 
-        Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_NAME, val);
-    }
+        // Update is called once per frame
+        void Update()
+        {
+        }
 
-    public void AgeChangeCheck(string val)
-    {
-        Debug.Log("Age Changed: " + val);
-        Managers.PlayerInfoManager.Player.age = Convert.ToInt32(val);
+        // Invoked when the value of the text field changes.
+        public void NameChangeCheck(string val)
+        {
+            Debug.Log("Name Changed: " + val);
+            if (!String.IsNullOrEmpty(val))
+            {
+                Managers.PlayerInfoManager.Player.name = val;
+                Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_NAME, val);
+            }
+        }
 
-        Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_AGE, val);
-    }
+        public void AgeChangeCheck(string val)
+        {
+            Debug.Log("Age Changed: " + val);
+            if (!String.IsNullOrEmpty(val))
+            {
+                Managers.PlayerInfoManager.Player.age = Convert.ToInt32(val);
+                Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_AGE, val);
+            }
+        }
 
-    public void WeightChangeCheck(string val)
-    {
-        Debug.Log("Weight Changed: " + val);
-        Managers.PlayerInfoManager.Player.weight = Convert.ToInt32(val);
+        public void WeightChangeCheck(string val)
+        {
+            Debug.Log("Weight Changed: " + val);
+            if (!String.IsNullOrEmpty(val))
+            {
+                Managers.PlayerInfoManager.Player.weight = Convert.ToInt32(val);
+                Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_WEIGHT, val);
+            }
+        }
 
-        Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_WEIGHT, val);
-    }
-
-    public void HeightChangeCheck(string val)
-    {
-        Debug.Log("Height Changed: " + val);
-        Managers.PlayerInfoManager.Player.height = Convert.ToInt32(val);
-
-        Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_HEIGHT, val);
+        public void HeightChangeCheck(string val)
+        {
+            Debug.Log("Height Changed: " + val);
+            if (!String.IsNullOrEmpty(val))
+            {
+                Managers.PlayerInfoManager.Player.height = Convert.ToInt32(val);
+                Messenger<string>.Broadcast(ProfileChangeEvent.CHANGE_HEIGHT, val);
+            }
+        }
     }
 }

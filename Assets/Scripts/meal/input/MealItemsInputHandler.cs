@@ -24,12 +24,29 @@ namespace meal.input
         private void Awake()
         {
             Messenger.AddListener(MealEvent.RESET_GRID_LAYOUT_GROUP, OnResetGridLayoutGroup);
+            Messenger<string>.AddListener(MealEvent.DELETE_ITEM, OnDeleteItem);
         }
 
         private void OnDestroy()
         {
             Messenger.RemoveListener(MealEvent.RESET_GRID_LAYOUT_GROUP, OnResetGridLayoutGroup);
+            Messenger<string>.RemoveListener(MealEvent.DELETE_ITEM, OnDeleteItem);
         }
+        
+        private void OnDeleteItem(string item)
+        {
+            if (_mealItems.Contains(item))
+            {
+                Debug.Log("MealItemsInputHandler OnDeleteItem: " + item);
+                _mealItems.Remove(item);
+            }
+
+            if (_mealItems.Count <= 0)
+            {
+                nextButton.gameObject.SetActive(false);
+            }
+        }
+
 
         private void OnResetGridLayoutGroup()
         {

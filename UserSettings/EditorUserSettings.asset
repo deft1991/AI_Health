@@ -1,3 +1,64 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4a66ea37253fff3a9fa13a8bf987645236ef2bb02a6808133b12ed14bde01cb
-size 2062
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!162 &1
+EditorUserSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_ConfigSettings:
+    RecentlyUsedSceneGuid-0:
+      value: 5a075153010d590d5c0d5d2648775b1315154f7d787f76672e284c30b2b23561
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 530952505d515c580f0b0a7544770d424e161b297f7a77357f7f4836b5b9323a
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 570506075c0d080958595d2712770944474e192e7f7025697c781866b1e66d6f
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 56030703575450030f5f0f7740700844144e1d787c717532292a4d30e7b4313d
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 0005005e01515f5f0b570920117708124416407e7f7c74322b70196be1b5366d
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5104005e07515e5a080d0d7040770815154f1a7c287d7636782d4d65e4b56439
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 0705555e01565c0c5e0c087240710c4447164c29747875657e7c4935b6e13539
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 545201530401500b09585f2349770c15454f4c2c7f7874322e781b60b2e33568
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      flags: 0
+    RecentlyUsedSceneGuid-9:
+      value: 52520504515158580e5c0d2346770747144f19292f7d2560282a1831bae4673c
+      flags: 0
+    UnityRemoteCompression:
+      value: 337f73
+      flags: 0
+    UnityRemoteDevice:
+      value: 225f4d46245b0d4902070862342649191512
+      flags: 0
+    UnityRemoteResolution:
+      value: 2d5e460b0459
+      flags: 0
+    vcSharedLogLevel:
+      value: 0d5e400f0650
+      flags: 0
+  m_VCAutomaticAdd: 1
+  m_VCDebugCom: 0
+  m_VCDebugCmd: 0
+  m_VCDebugOut: 0
+  m_SemanticMergeMode: 2
+  m_DesiredImportWorkerCount: 3
+  m_StandbyImportWorkerCount: 2
+  m_IdleImportWorkerShutdownDelay: 60000
+  m_VCShowFailedCheckout: 1
+  m_VCOverwriteFailedCheckoutAssets: 1
+  m_VCProjectOverlayIcons: 1
+  m_VCHierarchyOverlayIcons: 1
+  m_VCOtherOverlayIcons: 1
+  m_VCAllowAsyncUpdate: 1
+  m_ArtifactGarbageCollection: 1

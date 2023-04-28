@@ -12,12 +12,12 @@ namespace playerChangeValue
     {
         [SerializeField] private TMP_InputField durationInput;
         [SerializeField] private Button nextButton;
-        
+
         private int workoutDuration;
 
 
         #region PUBLIC
-        
+
         public void OnClickNext()
         {
             Messenger.Broadcast(ScreenChangeEvent.GO_TO_WORK_WORKOUT_DIFFICULTY_LEVEL);
@@ -34,11 +34,18 @@ namespace playerChangeValue
 
         private void DurationChangeCheck(string val)
         {
-            var duration = Convert.ToInt32(val);
-            Debug.Log("Workout Duration Changed: " + duration);
-            Managers.PlayerInfoManager.WorkoutDuration = duration;
-        
-            nextButton.gameObject.SetActive(duration > 0);
+            if (String.IsNullOrEmpty(val))
+            {
+                nextButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                var duration = Convert.ToInt32(val);
+                Debug.Log("Workout Duration Changed: " + duration);
+                Managers.PlayerInfoManager.WorkoutDuration = duration;
+
+                nextButton.gameObject.SetActive(duration > 0);
+            }
         }
 
         #endregion
